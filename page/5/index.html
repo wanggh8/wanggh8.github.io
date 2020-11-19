@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Petithao</title><meta name="description"><meta name="author" content="wanggh8"><meta name="copyright" content="wanggh8"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/head.jpg"><link rel="canonical" href="https://wanggh8.gitee.io/page/5/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="Petithao"><meta property="og:url" content="https://wanggh8.gitee.io/page/5/"><meta property="og:site_name" content="Petithao"><meta property="og:description"><meta property="og:image" content="https://wanggh8.gitee.io/img/head.jpg"><meta property="article:published_time" content="2020-11-19T10:37:19.736Z"><meta property="article:modified_time" content="2020-11-19T10:37:19.736Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"mysearch.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: false,
+  highlightLang: false,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: undefined,
+  isSidebar: false,
+  postUpdate: '2020-11-19 18:37:19'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.1.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">59</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">21</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/default_top_img.jpeg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Petithao</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">Petithao</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/wanggh8" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wanggh8@mail3.sysu.edu.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/Sky1299927852" target="_blank" title="WeChat"><i class="fab fa-weixin"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/SSAD/SSAD-homework3/" title="系分第三次作业">     <img class="post_bg" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="系分第三次作业"></a></div><div class="recent-post-info"><a class="article-title" href="/SSAD/SSAD-homework3/" title="系分第三次作业">系分第三次作业</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-04-15T13:06:55.000Z" title="发表于 2019-04-15 21:06:55">2019-04-15</time></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E7%B3%BB%E5%88%86/">系分</a></span></div><div class="content">简答题1.简述瀑布模型、增量模型、螺旋模型（含原型方法），并分析优缺点。（从项目特点、风险特征、人力资源利用角度思考。）瀑布模型 
+
+优点：
+降低软件开发的复杂度，提高软件开发过程透明性
+推迟软件实现，强调在软件实现前必须进行分析和设计工作
+以项目的阶段评审和文档控制为手段有效地对整个开发过程进行指导，保证了阶段之间的正确衔接，能够及时发现并纠正开 发过程中存在的缺陷，使产品达到预期的质量要求。
+为项目提供了按阶段划分的检查点。
+当前一阶段完成后，您只需要去关注后续阶段。
+
+缺点：
+过分强调过程活动的线性顺序，通过过多的强制完成日期和里程碑来跟踪各个项目阶段。
+缺乏灵活性，尤其无法解决软件需求不明确或不准确的问题
+风险控制能力较弱，当某一个阶段产生错误时，需要回归到前几个阶段重新开始，从而增加了开发风险。
+各个阶段的划分完全固定，阶段之间产生大量的文档，极大地增加了工作量
+
+增量模型优点
+增强客户对系统的信心。
+降低系统失败风险。
+提高系统可靠性。
+提高系统的稳定性和可维护性。
+
+缺点
+建立初始模型时，作为增量基础的基本业务服务的确定有一定难度 。
+增量粒度难以选择 。
+
+螺旋模型（含 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/IOS/Foundation/" title="Objective-C基础框架">     <img class="post_bg" data-lazy-src="/images/objective-C.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Objective-C基础框架"></a></div><div class="recent-post-info"><a class="article-title" href="/IOS/Foundation/" title="Objective-C基础框架">Objective-C基础框架</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-04-11T14:31:12.000Z" title="发表于 2019-04-11 22:31:12">2019-04-11</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/iOS/">iOS</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/Objective-C/">Objective-C</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/iOS/">iOS</a></span></div><div class="content">iOS 基础框架</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/SYSU/%E4%B8%93%E4%B8%9A%E8%AF%8D%E6%B1%87/" title="计算机专有词汇">     <img class="post_bg" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机专有词汇"></a></div><div class="recent-post-info"><a class="article-title" href="/SYSU/%E4%B8%93%E4%B8%9A%E8%AF%8D%E6%B1%87/" title="计算机专有词汇">计算机专有词汇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-03-28T13:06:55.000Z" title="发表于 2019-03-28 21:06:55">2019-03-28</time></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E8%80%83%E7%A0%94/">考研</a></span></div><div class="content">
+软件工程：将系统化的、规范化的、可度量的方法应用于软件的开法、运行和维护，即将工程化方法应用于软件。
+中间件（Middleware）：提供系统软件和应用软件之间连接的软件，以便于软件各部件之间的沟通。
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/SSAD/SSAD-homework2/" title="系分第二次作业">     <img class="post_bg" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="系分第二次作业"></a></div><div class="recent-post-info"><a class="article-title" href="/SSAD/SSAD-homework2/" title="系分第二次作业">系分第二次作业</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-03-28T13:06:55.000Z" title="发表于 2019-03-28 21:06:55">2019-03-28</time></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E7%B3%BB%E5%88%86/">系分</a></span></div><div class="content">1. 简答题用简短的语言给出对分析、设计的理解分析：强调对问题和需求的调查和研究，而不是解决方法
+设计：强调满足需求的一种概念上的软件和硬件的解决方法，而它的实现
+ 
+
+用一句话描述面向对象的分析与设计的优势面向对象的分析和设计使用相同的建模符号，问题层次和实施层次的专家可以通过通用符号进行交流。
+简述 UML（统一建模语言）的作用。考试考哪些图？作用：UML是种通用的可视化建模语言，用于可视化分析和设计的结果，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法
+考试的图：用例图、静态图、行为图、实现图等。
+
+用例图：用户角度：功能、执行者
+静态图：系统静态结构
+类图：概念及关系
+对象图：某种状态或时间段内，系统中活跃的对象及其关系
+包图：描述系统的分解结构
+
+
+行为图：系统的动态行为
+交互图：描述对象间的消息传递
+顺序图：强调对象间消息发送的时序
+合作图：强调对象间的动态协作关系
+
+
+状态图：对象的动态行为。状态-事件-状态迁移-响应动作
+活动图：描述系统为完成某功能而执行的操作序列
+
+
+实现图：描述系统的组成和分布状况
+构件图：组成部件及其关系
+部 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/IOS/Objective-C/" title="iOS Objective-C Manual">     <img class="post_bg" data-lazy-src="/images/objective-C.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="iOS Objective-C Manual"></a></div><div class="recent-post-info"><a class="article-title" href="/IOS/Objective-C/" title="iOS Objective-C Manual">iOS Objective-C Manual</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-03-21T12:31:12.000Z" title="发表于 2019-03-21 20:31:12">2019-03-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/iOS/">iOS</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/Objective-C/">Objective-C</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/iOS/">iOS</a></span></div><div class="content">iOS Objective-C Manual</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/SYSU/MyPlan/" title="My Plan">     <img class="post_bg" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="My Plan"></a></div><div class="recent-post-info"><a class="article-title" href="/SYSU/MyPlan/" title="My Plan">My Plan</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-03-19T14:54:51.000Z" title="发表于 2019-03-19 22:54:51">2019-03-19</time></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E8%80%83%E7%A0%94/">考研</a></span></div><div class="content">网站资料研招网中大招生简章2018中大录取名单复旦招生简章百度网盘资料分享资料
+ 
+
+101 思想政治理论参考书：
+ 肖秀荣考研政治命题人知识点精讲精练
+ 肖秀荣考研政治命题人1000题204 英语二参考书：
+ 恋恋有词考研英 语词汇
+ 考研词汇闪过
+ 2020考研英语长难句解密
+
+恋练有词电子资源
+
+ 
+
+302 数学二试卷结构（一）试卷满分及考试时间1.试卷满分为150分2.考试时间为180分钟。（二）试卷内容结构1.高等数学 78%2.线性代数 22%（三）卷题型结构1.单项选择题 8小题，每题4分，共32分2.填空题 6小题，每题4分，共24分3.解答题（包括证明题） 9小题，共94分
+参考书：李永乐复习全书
+时间线第三周
+ 第一章 函数 极限 连续性
+
+第四周
+ 复习相关第一章 函数 极限 连续性
+ 第一章练习题
+ 线性代数第一章
+
+408 计算机学科专业基础综合参考书
+ 《数据结构》(C语言版) (严蔚敏 清华大学出版社)
+ 《计算机组成原理》唐朔飞 高等教育出版社 
+ 《计算机操作系统》(汤子瀛 西安电子科技大学)
+ 《计算机网络》(谢希仁 电子工业出版社)
+
+数据结构  ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/AI/DataMining_assign1/" title="数据挖掘第一次作业">     <img class="post_bg" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据挖掘第一次作业"></a></div><div class="recent-post-info"><a class="article-title" href="/AI/DataMining_assign1/" title="数据挖掘第一次作业">数据挖掘第一次作业</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-03-17T05:59:29.000Z" title="发表于 2019-03-17 13:59:29">2019-03-17</time></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/">数据挖掘</a></span></div><div class="content">蒙特卡罗方法（英语：Monte Carlo method），也称统计模拟方法，是指使用随机数（或更常见的伪随机数）来解决很多计算问题的方法。在解决实际问题的时候应用蒙特卡罗方法主要有两部分工作：
+
+用蒙特卡罗方法模拟某一过程时，需要产生各种概率分布的随机变量。
+用统计方法把模型的数字特征估计出来，从而得到实际问题的数值解。
+
+蒙特卡洛算法也常用于机器学习，特别是强化学习的算法中。一般情况下，针对得到的样本数据集创建相对模糊的模型，通过蒙特卡洛方法对于模型中的参数进行选取，使之于原始数据的残差尽可能的小。从而达到创建模型拟合样本的目的。
+ 
+
+Exercise 1简述：蒙特卡罗方法可用于近似计算圆周率：让计算机每次随机生成两个0到1之间的数，看以这两个实数为横纵坐标的点是否在单位圆内。生成一系列随机点，统计单位圆内的点数与总点数，（圆面积和正方形面积之比为PI:4，PI为圆周率），当随机点获取越多时，其结果越接近于圆周率。
+实验过程：重复次数设为50，使用matlab实现，代码：
+myPi.m
+12345678910111213141516171819202122function [me ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/SSAD/SSAD-homework1/" title="系分第一次作业">     <img class="post_bg" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="系分第一次作业"></a></div><div class="recent-post-info"><a class="article-title" href="/SSAD/SSAD-homework1/" title="系分第一次作业">系分第一次作业</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-03-09T13:06:55.000Z" title="发表于 2019-03-09 21:06:55">2019-03-09</time></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E7%B3%BB%E5%88%86/">系分</a></span></div><div class="content">1. 软件工程的定义软件工程是软件开发领域里对工程方法的系统应用，是研究和应用如何以系统性的、规范化的、可定量的过程化方法去开发和维护软件，以及如何把经过时间考验而证明正确的管理技术和当前能够得到的最好的技术方法结合起来的学科。
+IEEE给出了一个更加综合的定义：将系统化的、规范的、可度量的方法用于软件的开发、运行和维护的过程，即将工程化应用于软件开发中。
+ 
+
+2. 软件危机本质原因软件危机是指在计算机软件的开发和维护过程中所遇到的一系列严重问题。概括地说，软件危机包含下述两方面的问题：如何开发软件，以满足对软件日益增长的需求；如何维护数量不断膨胀的已有软件。软件开发是一项高难度、高风险的活动，由于它的高失败率，故有所谓“软件危机”之说。软件危机的本源是复杂、期望和改变。
+一方面与软件本身的特点有关，另一方面也和软件开发与维护的方法不正确有关。软件不同于硬件，它是计算机系统中的逻辑部件而不是物理部件。管理和控制软件开发过程相当困难。软件是规模庞大，而且程序复杂性将随着程序规模的增加而呈指数上升。目前相当多的软件专业人员对软件开发和维护还有不省糊涂观念，在实践过程中或多或少地采用了错误 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/Git/GitManual/" title="Git Manual">     <img class="post_bg" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git Manual"></a></div><div class="recent-post-info"><a class="article-title" href="/Git/GitManual/" title="Git Manual">Git Manual</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-03-01T02:31:12.000Z" title="发表于 2019-03-01 10:31:12">2019-03-01</time></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/Git/">Git</a></span></div><div class="content">安装以及配置Git是目前世界上最先进的分布式版本控制系统。在Windows安装git后，选择Git Bash，命令行输入
+12$ git config --global user.name &quot;wanggh8&quot;$ git config --global user.email &quot;1299927852@qq.com&quot;
+
+名字和邮箱输入自己创建github时所用的
+ 
+本地基本使用选择一个空目录，路径最好不包含中文，然后使用git init可以把这个目录变成Git可以管理的仓库，只会可以用git add命令将文件添加到仓库暂存区中，然后可以用git commit提交到版本库分支中
+12$ git add readme.txt$ git commit -m &quot;wrote a readme file&quot;
+
+之后可以使用给git status 查看结果，当前是否有新的更改以及更改是否提交，如果被修改了可以用git diff查看文件修改前后的不同，选择是否要保留更改。如果选择放弃更改使用命令git checkout -- file可以丢弃工作区 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/IT/MacOSInstall/" title="Win10黑苹果安装">     <img class="post_bg" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Win10黑苹果安装"></a></div><div class="recent-post-info"><a class="article-title" href="/IT/MacOSInstall/" title="Win10黑苹果安装">Win10黑苹果安装</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-01T02:31:12.000Z" title="发表于 2018-03-01 10:31:12">2018-03-01</time></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/IT/">IT</a></span></div><div class="content">
+
+准备工作
+一个 8G 以上的U 盘（有的 U 盘标的是 8G，实际只有 7.X，实际容量小于 7.5G的会失败）
+MacOS 镜像
+Transmac
+分区工具DiskGenius
+EasyUEFI
+引导EFI文件（clover）
+Clover Configurator（可选）
+VSCode（用于编辑一些配置文件）
+
+制作启动U盘插入U 盘，打开 TransMac。如果没有可以点右键刷新。鼠标右键单击 U 盘，然后单击“Format Disk for Mac”(这将删除 U 盘上的所有文件，并为 macOS 做好准备)。格式完后选 Restore with Disk Image, 选择自己下载的镜像，确认写入。写入完成后，可以看到EFI分区。如果没有的话，重新插拔一下U盘。如果提示格式化磁盘，点取消就好。之后把自带的EFI中的clover文件夹删除，把自己下的拉到相应位置，或者把EFI文件夹整个替换，具体看下的资源。
+分区分区的话可以采用WIn10自带的磁盘管理进行也可以采用DiskGenius
+
+在磁盘管理中，使用磁盘压缩出一定的大小，建议40G以上，之后进行新建磁盘，选择不要格式 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/Win10/Office2019/" title="Win10 Office">     <img class="post_bg" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Win10 Office"></a></div><div class="recent-post-info"><a class="article-title" href="/Win10/Office2019/" title="Win10 Office">Win10 Office</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-03-01T02:31:12.000Z" title="发表于 2018-03-01 10:31:12">2018-03-01</time></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/win10/">win10</a></span></div><div class="content">
+
+专业增强版（强烈推荐）：
+http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/zh-cn/ProPlus2019Retail.img
+专业版：
+http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/zh-cn/Professional2019Retail.img
+家庭学生版：
+http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/zh-cn/HomeStudent2019Retail.img
+家庭企业版：
+http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/zh-cn/HomeBusiness2019Retail.img
+独立版（不推荐）：
+http://officecdn.micro ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/4/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">wanggh8</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">59</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">21</div></a></div><div class="card-info-data-item is-center"><a href="/categories"><div class="headline">分类</div><div class="length_num">6</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/wanggh8"><i class="fab fa-github"></i><span>Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/wanggh8" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wanggh8@mail3.sysu.edu.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/Sky1299927852" target="_blank" title="WeChat"><i class="fab fa-weixin"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Note</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a class="aside-post-cover" href="/IOS/UI/" title="iOS Objective-C UI"><img class="aside-post-bg" data-lazy-src="/images/objective-C.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="iOS Objective-C UI"/></a><div class="aside-post-info"><a class="aside-post-title" href="/IOS/UI/" title="iOS Objective-C UI">iOS Objective-C UI</a><time class="aside-post_meta post-meta-date" datetime="2020-11-19T09:31:24.784Z" title="发表于 2020-11-19 17:31:24">2020-11-19</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/IOS/FMDB/" title="无题"><img class="aside-post-bg" data-lazy-src="/images/objective-C.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="aside-post-info"><a class="aside-post-title" href="/IOS/FMDB/" title="无题">无题</a><time class="aside-post_meta post-meta-date" datetime="2020-11-19T09:31:24.783Z" title="发表于 2020-11-19 17:31:24">2020-11-19</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/IOS/Network%20programming%20and%20local%20storage/" title="网络编程与本地存储"><img class="aside-post-bg" data-lazy-src="/images/objective-C.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网络编程与本地存储"/></a><div class="aside-post-info"><a class="aside-post-title" href="/IOS/Network%20programming%20and%20local%20storage/" title="网络编程与本地存储">网络编程与本地存储</a><time class="aside-post_meta post-meta-date" datetime="2020-11-19T09:31:24.783Z" title="发表于 2020-11-19 17:31:24">2020-11-19</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/IOS/Swift%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/" title="Swift第三方库"><img class="aside-post-bg" data-lazy-src="/images/swift.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Swift第三方库"/></a><div class="aside-post-info"><a class="aside-post-title" href="/IOS/Swift%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/" title="Swift第三方库">Swift第三方库</a><time class="aside-post_meta post-meta-date" datetime="2020-10-31T16:00:00.000Z" title="发表于 2020-11-01 00:00:00">2020-11-01</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/IOS/MyDrive/" title="MyDrive"><img class="aside-post-bg" data-lazy-src="/images/swift.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MyDrive"/></a><div class="aside-post-info"><a class="aside-post-title" href="/IOS/MyDrive/" title="MyDrive">MyDrive</a><time class="aside-post_meta post-meta-date" datetime="2020-10-24T16:00:00.000Z" title="发表于 2020-10-25 00:00:00">2020-10-25</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Android/"><span class="card-category-list-name">Android</span><span class="card-category-list-count">12</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Backend/"><span class="card-category-list-name">Backend</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/MacOS/"><span class="card-category-list-name">MacOS</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/iOS/"><span class="card-category-list-name">iOS</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%80%83%E7%A0%94/"><span class="card-category-list-name">考研</span><span class="card-category-list-count">1</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href='/tags/Android/' style='font-size:16px; color:rgb(22, 162, 80)'>Android</a><a href='/tags/Android-UI/' style='font-size:17px; color:rgb(179, 117, 130)'>Android UI</a><a href='/tags/Bug/' style='font-size:16px; color:rgb(85, 120, 103)'>Bug</a><a href='/tags/Git/' style='font-size:20px; color:rgb(48, 111, 90)'>Git</a><a href='/tags/IT/' style='font-size:17px; color:rgb(111, 136, 150)'>IT</a><a href='/tags/Java/' style='font-size:21px; color:rgb(131, 192, 7)'>Java</a><a href='/tags/Java-Android/' style='font-size:20px; color:rgb(124, 181, 176)'>Java Android</a><a href='/tags/LoopBack/' style='font-size:20px; color:rgb(74, 76, 73)'>LoopBack</a><a href='/tags/MacOS/' style='font-size:16px; color:rgb(173, 52, 114)'>MacOS</a><a href='/tags/Objective-C/' style='font-size:19px; color:rgb(125, 55, 188)'>Objective-C</a><a href='/tags/Swift/' style='font-size:19px; color:rgb(60, 53, 171)'>Swift</a><a href='/tags/UI/' style='font-size:16px; color:rgb(29, 40, 73)'>UI</a><a href='/tags/Xcode/' style='font-size:16px; color:rgb(88, 168, 93)'>Xcode</a><a href='/tags/iOS/' style='font-size:20px; color:rgb(79, 182, 132)'>iOS</a><a href='/tags/win10/' style='font-size:20px; color:rgb(40, 69, 167)'>win10</a><a href='/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/' style='font-size:17px; color:rgb(200, 12, 192)'>数据库</a><a href='/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/' style='font-size:18px; color:rgb(109, 89, 195)'>数据挖掘</a><a href='/tags/%E7%B3%BB%E5%88%86/' style='font-size:19px; color:rgb(198, 148, 118)'>系分</a><a href='/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/' style='font-size:17px; color:rgb(31, 58, 114)'>网络编程</a><a href='/tags/%E8%80%83%E7%A0%94/' style='font-size:18px; color:rgb(12, 86, 39)'>考研</a><a href='/tags/%E8%8B%B1%E8%AF%AD/' style='font-size:19px; color:rgb(22, 122, 177)'>英语</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/03/"><span class="card-archive-list-date">三月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/06/"><span class="card-archive-list-date">六月 2019</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives">
+              <span>查看更多</span><i class="fas fa-angle-right"  ></i></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">59</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/default_top_img.jpeg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2020 By wanggh8</div><div class="icp"><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/"><img class="icp-icon" src="/img/icp.png"/><span>豫ICP备20009142号-1</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
+  $.getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js',function () {
+    jinrishici.load(function (result) {
+      if (true) {
+        var sub = "".length == 0 ? new Array() : "".split(',')
+        var content = result.data.content
+        var both = sub.unshift(content)
+        var typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = result.data.content
+      }
+    })
+  })
+}
+
+if (true) {
+  if (typeof Typed === 'function') subtitleType()
+  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+} else {
+  subtitleType()
+}
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script></div></body></html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mac键盘快捷键 | Petithao</title><meta name="description" content="Xcode使用总结"><meta name="keywords" content="MacOS"><meta name="author" content="wanggh8"><meta name="copyright" content="wanggh8"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/head.jpg"><link rel="canonical" href="https://wanggh8.gitee.io/MacOS/Mac%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="Mac键盘快捷键"><meta property="og:url" content="https://wanggh8.gitee.io/MacOS/Mac%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/"><meta property="og:site_name" content="Petithao"><meta property="og:description" content="Xcode使用总结"><meta property="og:image" content="https://wanggh8.gitee.io/images/MacOS.jpg"><meta property="article:published_time" content="2020-10-24T16:00:00.000Z"><meta property="article:modified_time" content="2020-10-29T16:00:00.000Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"mysearch.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: false,
+  highlightLang: false,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isSidebar: true,
+  postUpdate: '2020-10-30 00:00:00'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.1.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">59</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">21</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%AE%E7%9B%98%E6%8C%89%E9%94%AE%E4%BD%BF%E7%94%A8%E7%AC%A6%E5%90%88"><span class="toc-number">1.</span> <span class="toc-text">键盘按键使用符合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%AA%E5%88%87%E3%80%81%E6%8B%B7%E8%B4%9D%E3%80%81%E7%B2%98%E8%B4%B4%E5%92%8C%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">2.</span> <span class="toc-text">剪切、拷贝、粘贴和其他常用快捷键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9D%A1%E7%9C%A0%E3%80%81%E9%80%80%E5%87%BA%E7%99%BB%E5%BD%95%E5%92%8C%E5%85%B3%E6%9C%BA%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">3.</span> <span class="toc-text">睡眠、退出登录和关机快捷键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BF%E8%BE%BE%E5%92%8C%E7%B3%BB%E7%BB%9F%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">4.</span> <span class="toc-text">访达和系统快捷键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%A8%BF%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">5.</span> <span class="toc-text">文稿快捷键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mac-%E7%9A%84%E5%90%AF%E5%8A%A8%E7%BB%84%E5%90%88%E9%94%AE"><span class="toc-number">6.</span> <span class="toc-text">Mac 的启动组合键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mac-%E4%B8%8A%E7%9A%84%E2%80%9C%E8%81%9A%E7%84%A6%E2%80%9D%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">7.</span> <span class="toc-text">Mac 上的“聚焦”键盘快捷键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mac-%E4%B8%8A-Safari-%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E6%89%8B%E5%8A%BF"><span class="toc-number">8.</span> <span class="toc-text">Mac 上 Safari 浏览器中的键盘快捷键和手势</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5"><span class="toc-number">8.1.</span> <span class="toc-text">网页</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%98%85%E8%AF%BB%E5%88%97%E8%A1%A8"><span class="toc-number">8.2.</span> <span class="toc-text">阅读列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B9%A6%E7%AD%BE"><span class="toc-number">8.3.</span> <span class="toc-text">书签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B9%A6%E7%AD%BE%E8%BE%B9%E6%A0%8F%E5%92%8C%E4%B9%A6%E7%AD%BE%E8%A7%86%E5%9B%BE"><span class="toc-number">8.4.</span> <span class="toc-text">书签边栏和书签视图</span></a></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(/images/MacOS.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Petithao</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">Mac键盘快捷键</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-10-24T16:00:00.000Z" title="发表于 2020-10-25 00:00:00">2020-10-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-10-29T16:00:00.000Z" title="更新于 2020-10-30 00:00:00">2020-10-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/MacOS/">MacOS</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h3 id="键盘按键使用符合"><a href="#键盘按键使用符合" class="headerlink" title="键盘按键使用符合"></a>键盘按键使用符合</h3><table>
+<thead>
+<tr>
+<th align="left">修饰键</th>
+<th align="left">符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Command</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/9808e0a4c5ca7d8f3661af19ca54058e.png" alt="Command 符号"></td>
+</tr>
+<tr>
+<td align="left">Shift</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/da6e9b7f91e7eb13915e29d5288d8d3f.png" alt="Shift 符号"></td>
+</tr>
+<tr>
+<td align="left">Option</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/4fa4885c9111e0de6faeb637be746e2a.png" alt="Option 符号"></td>
+</tr>
+<tr>
+<td align="left">Control</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/d4a120294e44333f6ec6c00ef4648ee1.png" alt="Control 符号"></td>
+</tr>
+<tr>
+<td align="left">Return</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/078689fe0beeb14141babebacd04c2b6.png" alt="Return 符号"></td>
+</tr>
+<tr>
+<td align="left">Delete</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/218d37fa854c02bcf94075c546a8c409.png" alt="Delete 符号"></td>
+</tr>
+<tr>
+<td align="left">向前删除键</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/ada1e91f6f600e9bedfd0cfa6350016e.png" alt="向前删除符号"></td>
+</tr>
+<tr>
+<td align="left">上箭头键</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/f0580e8a608126a12c53e7e9cb781f6a.png" alt="上箭头符号"></td>
+</tr>
+<tr>
+<td align="left">下箭头键</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/c3eaebe7bf4f546981782483deb66c3d.png" alt="下箭头符号"></td>
+</tr>
+<tr>
+<td align="left">左箭头键</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/48aad3ebcec5008affc2c4d1909e8181.png" alt="左箭头符号"></td>
+</tr>
+<tr>
+<td align="left">右箭头键</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/910af33ff9bce5ce72f76173bbee6db8.png" alt="右箭头符号"></td>
+</tr>
+<tr>
+<td align="left">Page Up</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/3ebb2923e18011444f96c5250e45aba5.png" alt="Page Up 符号"></td>
+</tr>
+<tr>
+<td align="left">Page Down</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/293ba6a98cc6b5d2ef0c991aa127b16b.png" alt="Page Down 符号"></td>
+</tr>
+<tr>
+<td align="left">Top (Home)</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/f2459d16a2dc99487ffedccd96ba2371.png" alt="Top 符号"></td>
+</tr>
+<tr>
+<td align="left">End</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/070b28862a467ea7a5adc92d58159d4c.png" alt="End 符号"></td>
+</tr>
+<tr>
+<td align="left">右制表符</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/cd484d20455f2ae2026ed324d873c1d7.png" alt="右制表符符号"></td>
+</tr>
+<tr>
+<td align="left">左制表符</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/980be5db7a048e35a2227a5ecf9f1118.png" alt="左制表符符号"></td>
+</tr>
+<tr>
+<td align="left">Escape (Esc)</td>
+<td align="left"><img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/zh_CN/aa1397cc08985a6824afe45c4f62ac87.png" alt="Escape 符号"></td>
+</tr>
+</tbody></table>
+<h3 id="剪切、拷贝、粘贴和其他常用快捷键"><a href="#剪切、拷贝、粘贴和其他常用快捷键" class="headerlink" title="剪切、拷贝、粘贴和其他常用快捷键"></a>剪切、拷贝、粘贴和其他常用快捷键</h3><ul>
+<li><strong>Command-X</strong>：剪切所选项并拷贝到剪贴板。</li>
+<li><strong>Command-C</strong>：将所选项拷贝到剪贴板。这同样适用于“访达”中的文件。</li>
+<li><strong>Command-V</strong>：将剪贴板的内容粘贴到当前文稿或 App 中。这同样适用于“访达”中的文件。</li>
+<li><strong>Command-Z</strong>：撤销上一个命令。随后您可以按 Shift-Command-Z 来重做，从而反向执行撤销命令。在某些 App 中，您可以撤销和重做多个命令。</li>
+<li><strong>Command-A</strong>：全选各项。</li>
+<li><strong>Command-F</strong>：查找文稿中的项目或打开“查找”窗口。</li>
+<li><strong>Command-G</strong>：再次查找：查找之前所找到项目出现的下一个位置。要查找出现的上一个位置，请按 Shift-Command-G。</li>
+<li><strong>Command-H</strong>：隐藏最前面的 App 的窗口。要查看最前面的 App 但隐藏所有其他 App，请按 Option-Command-H。</li>
+<li><strong>Command-M</strong>：将最前面的窗口最小化至“程序坞”。要最小化最前面的 App 的所有窗口，请按 Option-Command-M。</li>
+<li><strong>Command-O：</strong>打开所选项，或打开一个对话框以选择要打开的文件。</li>
+<li><strong>Command-P</strong>：打印当前文稿。</li>
+<li><strong>Command-S</strong>：存储当前文稿。</li>
+<li><strong>Command-T</strong>：打开新标签页。</li>
+<li><strong>Command-W</strong>：关闭最前面的窗口。要关闭 App 的所有窗口，请按下 Option-Command-W。</li>
+<li><strong>Option-Command-Esc</strong>：<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201276">强制退出</a> App。</li>
+<li><strong>Command–空格键</strong>：显示或隐藏“<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201744">聚焦</a>”搜索栏。要从“访达”窗口执行“聚焦”搜索，请按 Command–Option–空格键。（如果您<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/guide/mac-help/type-in-another-language-with-input-sources-mchlp1406/mac">使用多个输入源</a>以便用不同的语言键入内容，这些快捷键会更改输入源而非显示“聚焦”。了解如何<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/guide/mac-help/change-a-conflicting-keyboard-shortcut-mh35591/mac">更改冲突的键盘快捷键</a>。）</li>
+<li><strong>Control-Command–空格键</strong>：显示字符检视器，您可以从中选择<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201586">表情符号和其他符号</a>。</li>
+<li><strong>Control-Command-F</strong>：全屏使用 App（如果 App 支持）。</li>
+<li><strong>空格键</strong>：使用<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/guide/mac-help/quick-look-files-and-folders-mh14119/mac">快速查看</a>来预览所选项。</li>
+<li><strong>Command-Tab</strong>：在打开的 App 中切换到下一个最近使用的 App。 </li>
+<li><strong>Shift-Command-5</strong>：在 <a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201260">macOS Mojave 或更高版本</a>中，拍摄截屏或录制屏幕。也可以使用 Shift-Command-3 或 Shift-Command-4 来拍摄截屏。<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201361">进一步了解截屏</a>。</li>
+<li><strong>Shift-Command-N：</strong>在“访达”中创建一个新文件夹。</li>
+<li>**Command-逗号 (,)**：打开最前面的 App 的偏好设置。</li>
+</ul>
+<h3 id="睡眠、退出登录和关机快捷键"><a href="#睡眠、退出登录和关机快捷键" class="headerlink" title="睡眠、退出登录和关机快捷键"></a>睡眠、退出登录和关机快捷键</h3><p>在这些快捷键中，您可能需要按住其中一些快捷键稍长时间。这样有助于避免无意中启用快捷键。</p>
+<ul>
+<li><strong>电源按钮</strong>：按下可将 Mac 开机或将 Mac 从睡眠状态唤醒。按住这个按钮 1.5 秒可使 Mac 进入睡眠状态。*继续按住<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201150">则会强制您的 Mac 关机</a>。</li>
+<li>*<em>Option–Command–电源按钮**</em>或 <strong>Option–Command–Media Eject（Option–Command–介质推出键）</strong><img src= "/img/loading.gif" data-lazy-src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/il/eject-button-icon.png" alt="img">：将您的 Mac 置于睡眠状态。</li>
+<li>*<em>Control–Shift–电源按钮**</em>或 <strong>Control–Shift–Media Eject（Control–Shift–介质推出键）</strong><img src= "/img/loading.gif" data-lazy-src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/il/eject-button-icon.png" alt="img">：将显示器置于睡眠状态。</li>
+<li>*<em>Control–电源按钮**</em> 或 <strong>Control–介质推出键</strong> <img src= "/img/loading.gif" data-lazy-src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/il/eject-button-icon.png" alt="img">：显示一个对话框，询问您是要重新启动、睡眠还是关机。</li>
+<li>*<em>Control–Command–电源按钮**</em>：强制 Mac 重新启动，系统不会提示是否要存储任何打开且未存储的文稿。</li>
+<li><strong>Control–Command–Media Eject（Control–Command–介质推出键）</strong><img src= "/img/loading.gif" data-lazy-src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/il/eject-button-icon.png" alt="img">：退出所有 App，然后重新启动您的Mac。如果任何打开的文稿有未存储的更改，系统会询问您是否要存储这些更改。</li>
+<li>*<em>Control–Option–Command–电源按钮**</em> 或 <strong>Control–Option–Command–介质推出键</strong> <img src= "/img/loading.gif" data-lazy-src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/il/eject-button-icon.png" alt="img">：退出所有 App，然后将您的 Mac 关机。如果任何打开的文稿有未存储的更改，系统会询问您是否要存储这些更改。</li>
+<li><strong>Control-Command-Q</strong>：立即锁定屏幕。</li>
+<li><strong>Shift–Command–Q</strong>：退出登录您的 macOS 用户帐户。系统将提示您确认。要在不确认的情况下立即退出登录，请按下 Option-Shift-Command-Q。</li>
+</ul>
+<h3 id="访达和系统快捷键"><a href="#访达和系统快捷键" class="headerlink" title="访达和系统快捷键"></a>访达和系统快捷键</h3><ul>
+<li><strong>Command-D</strong>：复制所选文件。</li>
+<li><strong>Command-E</strong>：推出所选磁盘或宗卷。</li>
+<li><strong>Command-F</strong>：在“访达”窗口中开始“聚焦”搜索。</li>
+<li><strong>Command-I</strong>：显示所选文件的“显示简介”窗口。</li>
+<li><strong>Command-R</strong>：(1) 如果在“访达”中选择了某个别名：显示所选别名对应的原始文件。(2) 在某些 App（如“日历”或 Safari 浏览器）中，刷新或重新载入页面。(3) 在<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201541">“软件更新”偏好设置</a>中，再次检查有没有软件更新。</li>
+<li><strong>Shift-Command-C</strong>：打开“电脑”窗口。</li>
+<li><strong>Shift-Command-D</strong>：打开“桌面”文件夹。</li>
+<li><strong>Shift-Command-F</strong>：打开“最近使用”窗口，其中显示了您最近查看或更改过的所有文件。</li>
+<li><strong>Shift-Command-G</strong>：打开“前往文件夹”窗口。</li>
+<li><strong>Shift-Command-H</strong>：打开当前 macOS 用户帐户的个人文件夹。</li>
+<li><strong>Shift-Command-I</strong>：打开 iCloud 云盘。</li>
+<li><strong>Shift-Command-K</strong>：打开“网络”窗口。</li>
+<li><strong>Option-Command-L</strong>：打开“下载”文件夹。</li>
+<li><strong>Shift-Command-N：</strong>新建文件夹。</li>
+<li><strong>Shift-Command-O</strong>：打开“文稿”文件夹。</li>
+<li><strong>Shift-Command-P</strong>：在“访达”窗口中显示或隐藏预览面板。</li>
+<li><strong>Shift-Command-R</strong>：打开“隔空投送”窗口。</li>
+<li><strong>Shift-Command-T</strong>：显示或隐藏“访达”窗口中的标签页栏。 </li>
+<li><strong>Ctrl-Shift-Command-T</strong>：将所选的“访达”项目添加到“程序坞”（OS X Mavericks 或更高版本）</li>
+<li><strong>Shift-Command-U</strong>：打开“实用工具”文件夹。</li>
+<li><strong>Option-Command-D</strong>：显示或隐藏“程序坞”。 </li>
+<li><strong>Control-Command-T</strong>：将所选项添加到边栏（OS X Mavericks 或更高版本）。</li>
+<li><strong>Option-Command-P</strong>：隐藏或显示“访达”窗口中的路径栏。</li>
+<li><strong>Option-Command-S</strong>：隐藏或显示“访达”窗口中的边栏。</li>
+<li>**Command–斜线 (/)**：隐藏或显示“访达”窗口中的状态栏。</li>
+<li><strong>Command-J</strong>：显示“显示”选项。</li>
+<li><strong>Command-K</strong>：打开“连接服务器”窗口。</li>
+<li><strong>Command-L</strong>：为所选项制作替身。</li>
+<li><strong>Command-N</strong>：打开一个新的“访达”窗口。</li>
+<li><strong>Option-Command-N</strong>：新建智能文件夹。</li>
+<li><strong>Command-T</strong>：在当前“访达”窗口中有单个标签页开着的状态下显示或隐藏标签页栏。</li>
+<li><strong>Option-Command-T</strong>：在当前“访达”窗口中有单个标签页开着的状态下显示或隐藏工具栏。</li>
+<li><strong>Option-Command-V</strong>：移动：将剪贴板中的文件从原始位置移动到当前位置。</li>
+<li><strong>Command-Y</strong>：使用“快速查看”预览所选文件。</li>
+<li><strong>Option-Command-Y</strong>：显示所选文件的快速查看幻灯片显示。</li>
+<li><strong>Command-1</strong>：以图标方式显示“访达”窗口中的项目。</li>
+<li><strong>Command-2</strong>：以列表方式显示“访达”窗口中的项目。</li>
+<li><strong>Command-3</strong>：以分栏方式显示“访达”窗口中的项目。 </li>
+<li><strong>Command-4</strong>：以画廊方式显示“访达”窗口中的项目。</li>
+<li>**Command–左中括号 ([)**：前往上一文件夹。</li>
+<li>**Command–右中括号 (])**：前往下一个文件夹。</li>
+<li><strong>Command–上箭头</strong>：打开包含当前文件夹的文件夹。</li>
+<li><strong>Command–Control–上箭头</strong>：在新窗口中打开包含当前文件夹的文件夹。</li>
+<li><strong>Command–下箭头</strong>：打开所选项。</li>
+<li><strong>右箭头</strong>：打开所选文件夹。这个快捷键仅在列表视图中有效。</li>
+<li><strong>左箭头</strong>：关闭所选文件夹。这个快捷键仅在列表视图中有效。</li>
+<li><strong>Command-Delete</strong>：将所选项移到废纸篓。</li>
+<li><strong>Shift-Command-Delete</strong>：清倒废纸篓。</li>
+<li><strong>Option-Shift-Command-Delete</strong>：清倒废纸篓而不显示确认对话框。</li>
+<li><strong>Command–调高亮度</strong>：打开或关闭<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204592">目标显示器模式</a>。</li>
+<li><strong>Command–调低亮度</strong>：当您的 Mac 连接到多台显示器时，打开或关闭<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT202351#mirroring">视频镜像</a>。</li>
+<li><strong>Option–调高亮度</strong>：打开“显示器”偏好设置。这个快捷键可与任一亮度键搭配使用。</li>
+<li><strong>Control–调高亮度</strong>或 <strong>Control–调低亮度</strong>：更改外部显示器的亮度（如果显示器支持）。</li>
+<li><strong>Option-Shift–调高亮度</strong>或 <strong>Option-Shift–调低亮度</strong>：以较小的步幅调节显示器亮度。如果您的显示器支持，可以将 Control 键添加到此快捷键，以便在外置显示器上进行调节。</li>
+<li><strong>Option–“调度中心”</strong>：打开“调度中心”偏好设置。</li>
+<li><strong>Command–调度中心</strong>：显示桌面。 </li>
+<li><strong>Control–下箭头</strong>：显示最前面的 App 的所有窗口。</li>
+<li><strong>Option–调高音量</strong>：打开“声音”偏好设置。这个快捷键可与任一音量键搭配使用。</li>
+<li><strong>Option-Shift–调高音量</strong>或 <strong>Option-Shift–调低音量</strong>：以较小的步幅调节音量。</li>
+<li><strong>Option–键盘调高亮度</strong>：打开“键盘”偏好设置。这个快捷键可与任一键盘亮度键搭配使用。</li>
+<li><strong>Option-Shift–键盘调高亮度</strong>或 <strong>Option-Shift–键盘调低亮度</strong>：以较小的步幅调节键盘亮度。</li>
+<li><strong>连按 Option 键</strong>：在单独的窗口中打开项目，然后关闭原始窗口。</li>
+<li><strong>连按 Command 键</strong>：在单独的标签页或窗口中打开文件夹。</li>
+<li><strong>按住 Command 键拖移到另一个宗卷</strong>：将拖移的项目移到另一个宗卷，而不是拷贝它。 </li>
+<li><strong>按住 Option 键拖移</strong>：拷贝托移的项目。拖移项目时指针会随之变化。</li>
+<li><strong>拖移时按住 Option-Command</strong>：为拖移的项目制作替身。拖移项目时指针会随之变化。</li>
+<li><strong>按住 Option 键点按开合三角</strong>：打开所选文件夹内的所有文件夹。这个快捷键仅在列表视图中有效。</li>
+<li><strong>按住 Command 键点按窗口标题</strong>：查看包含当前文件夹的文件夹。</li>
+<li><a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/guide/mac-help/select-items-mchlp1378">了解如何使用 Command 或 Shift 在“访达”中选择多个项目</a>。 </li>
+<li>点按“访达”菜单栏中的“前往”菜单查看用于打开许多常用文件夹（如“应用程序”、“文稿”、“下载”、“实用工具”和“iCloud 云盘”）的快捷键。</li>
+</ul>
+<h3 id="文稿快捷键"><a href="#文稿快捷键" class="headerlink" title="文稿快捷键"></a>文稿快捷键</h3><p>这些快捷键的行为可能因您使用的 App 而异。</p>
+<ul>
+<li><strong>Command-B</strong>：以粗体显示所选文本，或者打开或关闭粗体显示功能。 </li>
+<li><strong>Command-I</strong>：以斜体显示所选文本，或者打开或关闭斜体显示功能。</li>
+<li><strong>Command-K</strong>：添加网页链接。</li>
+<li><strong>Command-U</strong>：对所选文本加下划线，或者打开或关闭加下划线功能。</li>
+<li><strong>Command-T</strong>：显示或隐藏“字体”窗口。</li>
+<li><strong>Command-D</strong>：从“打开”对话框或“存储”对话框内选择“桌面”文件夹。</li>
+<li><strong>Control-Command-D</strong>：显示或隐藏所选字词的定义。</li>
+<li>**Shift-Command–冒号 (:)**：显示“拼写和语法”窗口。</li>
+<li>**Command–分号 (;)**：查找文稿中拼写错误的字词。</li>
+<li><strong>Option-Delete</strong>：删除插入点左边的字词。</li>
+<li><strong>Control-H</strong>：删除插入点左边的字符。也可以使用 Delete 键。</li>
+<li><strong>Control-D</strong>：删除插入点右边的字符。也可以使用 Fn-Delete。</li>
+<li><strong>Fn-Delete</strong>：在没有向前删除  键的键盘上向前删除。也可以使用 Control-D。</li>
+<li><strong>Control-K</strong>：删除插入点与行或段落末尾处之间的文本。</li>
+<li><strong>Fn–上箭头</strong>：Page Up：向上滚动一页。 </li>
+<li><strong>Fn–下箭头</strong>：Page Down：向下滚动一页。</li>
+<li><strong>Fn–左箭头：</strong>Home：滚动到文稿开头。</li>
+<li><strong>Fn–右箭头</strong>：End：滚动到文稿末尾。</li>
+<li><strong>Command–上箭头</strong>：将插入点移至文稿开头。</li>
+<li><strong>Command–下箭头</strong>：将插入点移至文稿末尾。</li>
+<li><strong>Command–左箭头</strong>：将插入点移至当前行的行首。</li>
+<li><strong>Command–右箭头</strong>：将插入点移至当前行的行尾。</li>
+<li><strong>Option–左箭头</strong>：将插入点移至上一字词的词首。</li>
+<li><strong>Option–右箭头</strong>：将插入点移至下一字词的词尾。</li>
+<li><strong>Shift-Command–上箭头</strong>：选中插入点与文稿开头之间的文本。</li>
+<li><strong>Shift-Command–下箭头</strong>：选中插入点与文稿末尾之间的文本。</li>
+<li><strong>Shift-Command–左箭头</strong>：选中插入点与当前行行首之间的文本。</li>
+<li><strong>Shift-Command–右箭头</strong>：选中插入点与当前行行尾之间的文本。</li>
+<li><strong>Shift–上箭头</strong>：将文本选择范围扩展到上一行相同水平位置的最近字符处。</li>
+<li><strong>Shift–下箭头</strong>：将文本选择范围扩展到下一行相同水平位置的最近字符处。</li>
+<li><strong>Shift–左箭头</strong>：将文本选择范围向左扩展一个字符。</li>
+<li><strong>Shift–右箭头</strong>：将文本选择范围向右扩展一个字符。</li>
+<li><strong>Option–Shift–上箭头</strong>：将文本选择范围扩展到当前段落的段首，再按一次则扩展到下一段落的段首。</li>
+<li><strong>Option–Shift–下箭头</strong>：将文本选择范围扩展到当前段落的段尾，再按一次则扩展到下一段落的段尾。</li>
+<li><strong>Option–Shift–左箭头</strong>：将文本选择范围扩展到当前字词的词首，再按一次则扩展到后一字词的词首。</li>
+<li><strong>Option–Shift–左箭头</strong>：将文本选择范围扩展到当前字词的词尾，再按一次则扩展到后一字词的词尾。</li>
+<li><strong>Control–A</strong>：移至行或段落的开头。</li>
+<li><strong>Control–E</strong>：移至行或段落的末尾。</li>
+<li><strong>Control–F</strong>：向前移动一个字符。</li>
+<li><strong>Control–B</strong>：向后移动一个字符。</li>
+<li><strong>Control–L</strong>：将光标或所选内容置于可见区域中央。</li>
+<li><strong>Control–P</strong>：上移一行。</li>
+<li><strong>Control–N</strong>：下移一行。</li>
+<li><strong>Control–O</strong>：在插入点后新插入一行。</li>
+<li><strong>Control–T</strong>：将插入点后面的字符与插入点前面的字符交换。</li>
+<li>**Command–左花括号 ({)**：左对齐。</li>
+<li>**Command–右花括号 (})**：右对齐。</li>
+<li>**Shift-Command–竖线 (|)**：居中对齐。</li>
+<li><strong>Option-Command-F</strong>：前往搜索栏。 </li>
+<li><strong>Option-Command-T</strong>：显示或隐藏 App 中的工具栏。</li>
+<li><strong>Option-Command-C</strong>：拷贝样式：将所选项的格式设置拷贝到剪贴板。</li>
+<li><strong>Option-Command-V</strong>：粘贴样式：将拷贝的样式应用到所选项。</li>
+<li><strong>Option-Shift-Command-V</strong>：粘贴并匹配样式：将周围内容的样式应用到粘贴在该内容中的项目。</li>
+<li><strong>Option-Command-I</strong>：显示或隐藏检查器窗口。</li>
+<li><strong>Shift-Command-P</strong>：页面设置：显示用于选择文稿设置的窗口。</li>
+<li><strong>Shift-Command-S</strong>：显示“存储为”对话框或复制当前文稿。</li>
+<li>**Shift-Command-减号 (-)**：缩小所选项。</li>
+<li>**Shift-Command-加号 (+)**：放大所选项。Command–等号 (=) 可实现相同的功能。</li>
+<li>**Shift-Command–问号 (?)**：打开“帮助”菜单。</li>
+</ul>
+<h3 id="Mac-的启动组合键"><a href="#Mac-的启动组合键" class="headerlink" title="Mac 的启动组合键"></a>Mac 的启动组合键</h3><p>了解可通过在启动时按住一个或多个按键来访问的 Mac 功能和工具。 </p>
+<p>要使用这些组合键中的任何一个，请在按下电源按钮以<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201150">开启 Mac</a> 后或在 Mac 开始重新启动后，立即按住相应按键。请一直按住，直至电脑出现对应的行为。</p>
+<ul>
+<li><strong>Command (⌘)-R：</strong>从内建的 <a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201314">macOS 恢复</a>系统启动。或者，您也可以使用 Option-Command-R 或 Shift-Option-Command-R 以通过互联网从 macOS 恢复功能启动。<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204904">macOS 恢复功能可以安装不同版本的 macOS</a>，具体取决于您在电脑启动时使用的组合键。如果您的 Mac 使用了<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204455">固件密码</a>，系统将提示您输入这个密码。</li>
+<li><strong>Option (⌥) 或 Alt：</strong>启动进入“<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT202796">启动管理器</a>”，您可以从中选取其他可用的启动磁盘或宗卷。如果您的 Mac 使用了<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204455">固件密码</a>，系统将提示您输入这个密码。</li>
+<li><strong>Option-Command-P-R：</strong><a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204063">重置 NVRAM</a> 或 PRAM。如果您的 Mac 使用了<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204455">固件密码</a>，电脑会忽略这个组合键或从 <a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201314">macOS 恢复功能</a>启动。 </li>
+<li><strong>Shift (⇧)：</strong>以<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201262">安全模式</a>启动。如果使用了<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204455">固件密码</a>，这个组合键将被停用。</li>
+<li><strong>D：</strong>启动进入“<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT202731">Apple 诊断</a>”实用工具。或者，您也可以使用 Option-D 通过互联网启动进入这个实用工具。如果使用了<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204455">固件密码</a>，这个组合键将被停用。</li>
+<li><strong>N：</strong>从 NetBoot 服务器启动，<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT202770">前提是您的 Mac 支持网络启动宗卷</a>。要使用服务器上默认的引导映像，请按住 Option-N。如果使用了<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204455">固件密码</a>，这个组合键将被停用。</li>
+<li><strong>Command-S：</strong>以<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201573">单用户模式</a>启动。如果运行的是 <a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201260">macOS Mojave 或更高版本</a>，或者使用了<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204455">固件密码</a>，这个组合键将被停用。</li>
+<li><strong>T：</strong>以<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201462">目标磁盘模式</a>启动。如果使用了<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204455">固件密码</a>，这个组合键将被停用。</li>
+<li><strong>Command-V：</strong>以<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201573">详细模式</a>启动。如果使用了<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204455">固件密码</a>，这个组合键将被停用。</li>
+<li><strong>推出键</strong> (⏏)、<strong>F12</strong>、<strong>鼠标按钮</strong>或<strong>触控板按钮：</strong>推出可移动介质，例如光盘。如果使用了<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204455">固件密码</a>，这个组合键将被停用。</li>
+</ul>
+<h3 id="Mac-上的“聚焦”键盘快捷键"><a href="#Mac-上的“聚焦”键盘快捷键" class="headerlink" title="Mac 上的“聚焦”键盘快捷键"></a>Mac 上的“聚焦”键盘快捷键</h3><p>在 Mac 上使用键盘快捷键通过“聚焦”快速搜索。</p>
+<table>
+<thead>
+<tr>
+<th align="left">操作</th>
+<th align="left">快捷键</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">打开“聚焦”以启动搜索</td>
+<td align="left">Command-空格键</td>
+</tr>
+<tr>
+<td align="left">使用建议的结果完成搜索</td>
+<td align="left">右箭头键</td>
+</tr>
+<tr>
+<td align="left">移到下一个搜索结果</td>
+<td align="left">下箭头键</td>
+</tr>
+<tr>
+<td align="left">移到上一个搜索结果</td>
+<td align="left">上箭头键</td>
+</tr>
+<tr>
+<td align="left">移到下一个类别中的第一个搜索结果</td>
+<td align="left">Command-下箭头</td>
+</tr>
+<tr>
+<td align="left">移到上一个类别中的第一个搜索结果</td>
+<td align="left">Command-上箭头</td>
+</tr>
+<tr>
+<td align="left">显示 Mac 上的搜索结果（如文件）路径</td>
+<td align="left">Command</td>
+</tr>
+<tr>
+<td align="left">放大图像预览</td>
+<td align="left">Control 键（然后在触控板上移动双指以在预览中移动图像）</td>
+</tr>
+<tr>
+<td align="left">打开所选结果</td>
+<td align="left">Return 键</td>
+</tr>
+<tr>
+<td align="left">在 App 或<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/guide/mac-help/aside/glos00063759/10.15/mac/10.15">“访达”</a>中查看文件</td>
+<td align="left">Command-R 或 Command-连按</td>
+</tr>
+<tr>
+<td align="left">打开搜索结果已选定的“访达”窗口</td>
+<td align="left">Option-Command-空格键</td>
+</tr>
+</tbody></table>
+<h3 id="Mac-上-Safari-浏览器中的键盘快捷键和手势"><a href="#Mac-上-Safari-浏览器中的键盘快捷键和手势" class="headerlink" title="Mac 上 Safari 浏览器中的键盘快捷键和手势"></a>Mac 上 Safari 浏览器中的键盘快捷键和手势</h3><p>除 Safari 浏览器菜单中显示的快捷键外，您还可以使用以下快捷键。</p>
+<h4 id="网页"><a href="#网页" class="headerlink" title="网页"></a>网页</h4><table>
+<thead>
+<tr>
+<th align="left">操作</th>
+<th align="left">快捷键或手势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">向上、向下、向左或向右滚动</td>
+<td align="left">按下箭头键。</td>
+</tr>
+<tr>
+<td align="left">大幅度滚动</td>
+<td align="left">按下箭头键时按住 Option 键。</td>
+</tr>
+<tr>
+<td align="left">向下滚动屏幕</td>
+<td align="left">Page Down 键空格键</td>
+</tr>
+<tr>
+<td align="left">向上滚动屏幕</td>
+<td align="left">Page Up 键Shift-空格键</td>
+</tr>
+<tr>
+<td align="left">滚动到页面左上角或左下角</td>
+<td align="left">Command–上箭头键或 Home 键Command–下箭头键或 End 键</td>
+</tr>
+<tr>
+<td align="left">高亮显示网页上的下一项</td>
+<td align="left">Tab 将高亮显示下一文本栏或弹出式菜单。如果在“系统偏好设置”的“键盘”面板的“快捷键”面板中选择了“所有控制”，Tab 还将高亮显示按钮和其他控制。按下 Option-Tab 会高亮显示按下 Tab 键所高亮显示的项目，以及所有其他可点按项目。若要交换 Tab 和 Option-Tab 的行为，请在 Safari 浏览器偏好设置的“高级”面板中打开“按下 Tab 键以高亮显示网页上的每一项”。</td>
+</tr>
+<tr>
+<td align="left">显示所有标签页</td>
+<td align="left">Shift-Command-\</td>
+</tr>
+<tr>
+<td align="left">在新标签页中打开页面</td>
+<td align="left">按住 Command 键点按链接按住 Command 键点按书签在<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/guide/safari/aside/glos5a7c4a65/13.0/mac/10.15">智能搜索栏</a>中键入后，按下 Command-Return。</td>
+</tr>
+<tr>
+<td align="left">在新标签页中打开页面，并使该标签页成为活跃标签页</td>
+<td align="left">按住 Shift-Command 点按链接按住 Shift-Command 点按书签在智能搜索栏中键入后，按下 Shift-Command-Return。</td>
+</tr>
+<tr>
+<td align="left">使下一标签页成为活跃标签页</td>
+<td align="left">Control-Tab 或 Shift-Command-]</td>
+</tr>
+<tr>
+<td align="left">使上一标签页成为活跃标签页</td>
+<td align="left">Control-Shift-Tab 或 Shift-Command -[</td>
+</tr>
+<tr>
+<td align="left">选择前 9 个标签页中的一个</td>
+<td align="left">Command-1 到 Command-9</td>
+</tr>
+<tr>
+<td align="left">关闭全部标签页，只保留其中一个</td>
+<td align="left">按住 Option 键点按您要保持打开的标签页上的“关闭”按钮 <img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5E191630680CE2E07445B58A/5E191634680CE2E07445B591/zh_CN/7bba8a8a3f5749b2aa1803dbc411c33b.png" alt="img"></td>
+</tr>
+<tr>
+<td align="left">重新打开上次关闭的标签页或窗口</td>
+<td align="left">Shift-Command-T</td>
+</tr>
+<tr>
+<td align="left">按名称查看最近访问页面的列表</td>
+<td align="left">按住“后退”<img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5E191630680CE2E07445B58A/5E191634680CE2E07445B591/zh_CN/0c4ab2775b2487b679f490cd69937d92.png" alt="img"> 或“前进”<img src= "/img/loading.gif" data-lazy-src="https://help.apple.com/assets/5E191630680CE2E07445B58A/5E191634680CE2E07445B591/zh_CN/fc1a25678d1c65d4fd4746243fd8ee15.png" alt="img"> 按钮，直到列表出现</td>
+</tr>
+<tr>
+<td align="left">按网址 (URL) 查看最近访问页面的列表</td>
+<td align="left">按下 Option 键，并按住“后退”或“前进”按钮，直到列表出现</td>
+</tr>
+<tr>
+<td align="left">前往主页</td>
+<td align="left">Command-Home 键</td>
+</tr>
+<tr>
+<td align="left">在<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/guide/safari/aside/glos5a7c4a65/13.0/mac/10.15">智能搜索栏</a>中键入时，恢复当前网页地址</td>
+<td align="left">Esc 键</td>
+</tr>
+<tr>
+<td align="left">关闭阅读器</td>
+<td align="left">Esc 键</td>
+</tr>
+<tr>
+<td align="left">退出全屏幕视图</td>
+<td align="left">Esc 键</td>
+</tr>
+<tr>
+<td align="left">下载链接文件</td>
+<td align="left">按住 Option 键点按文件的链接</td>
+</tr>
+<tr>
+<td align="left">打开下载的文件</td>
+<td align="left">连按下载列表中的文件</td>
+</tr>
+<tr>
+<td align="left">缩放网站内容</td>
+<td align="left">按下 Command-加号 (+) 或 Command-减号 (–)</td>
+</tr>
+<tr>
+<td align="left">缩放网站文本</td>
+<td align="left">选取“显示”&gt;“使文本变大”或“显示”&gt;“使文本变小”时，按下 Option 键。</td>
+</tr>
+</tbody></table>
+<h4 id="阅读列表"><a href="#阅读列表" class="headerlink" title="阅读列表"></a>阅读列表</h4><table>
+<thead>
+<tr>
+<th align="left">操作</th>
+<th align="left">快捷键或手势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">显示或隐藏阅读列表边栏</td>
+<td align="left">Control-Command-2</td>
+</tr>
+<tr>
+<td align="left">添加当前页面</td>
+<td align="left">Shift-Command-D</td>
+</tr>
+<tr>
+<td align="left">添加链接页面</td>
+<td align="left">按住 Shift 键点按页面的链接</td>
+</tr>
+<tr>
+<td align="left">移除页面</td>
+<td align="left">按住 Control 键点按边栏中的页面摘要，然后选取“移除项目”。您也可以在页面摘要上向左轻扫，然后点按“移除”。或者，一直向左轻扫直至页面摘要消失。</td>
+</tr>
+</tbody></table>
+<h4 id="书签"><a href="#书签" class="headerlink" title="书签"></a>书签</h4><table>
+<thead>
+<tr>
+<th align="left">操作</th>
+<th align="left">快捷键或手势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">将书签添加到“个人收藏”栏</td>
+<td align="left">点按<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/guide/safari/aside/glos5a7c4a65/13.0/mac/10.15">智能搜索栏</a>以显示页面的完整地址及其图标，然后将图标拖移到“个人收藏”栏</td>
+</tr>
+<tr>
+<td align="left">打开“个人收藏”栏中某个文件夹内的所有书签</td>
+<td align="left">按住 Command 键点按“个人收藏”栏中的文件夹</td>
+</tr>
+<tr>
+<td align="left">在“个人收藏”栏上移动书签</td>
+<td align="left">左右拖移书签</td>
+</tr>
+<tr>
+<td align="left">从“个人收藏”栏移除书签</td>
+<td align="left">将书签拖移到个人收藏栏外</td>
+</tr>
+</tbody></table>
+<h4 id="书签边栏和书签视图"><a href="#书签边栏和书签视图" class="headerlink" title="书签边栏和书签视图"></a>书签边栏和书签视图</h4><table>
+<thead>
+<tr>
+<th align="left">操作</th>
+<th align="left">快捷键或手势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">显示或隐藏书签边栏</td>
+<td align="left">Control-Command-1</td>
+</tr>
+<tr>
+<td align="left">选择边栏中的书签和文件夹</td>
+<td align="left">按住 Command 键点按每个书签和文件夹按住 Shift 键点按以扩展选择</td>
+</tr>
+<tr>
+<td align="left">选择下一个书签或文件夹</td>
+<td align="left">上箭头键或下箭头键</td>
+</tr>
+<tr>
+<td align="left">打开所选书签</td>
+<td align="left">空格键</td>
+</tr>
+<tr>
+<td align="left">打开所选文件夹</td>
+<td align="left">空格键或右箭头键</td>
+</tr>
+<tr>
+<td align="left">关闭所选文件夹</td>
+<td align="left">空格键或左箭头键</td>
+</tr>
+<tr>
+<td align="left">更改书签的名称或地址</td>
+<td align="left">选择书签，然后按下 Return 键您还可以<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/guide/safari/aside/glosb234ba05/13.0/mac/10.15">用力点按</a>书签</td>
+</tr>
+<tr>
+<td align="left">取消编辑边栏中的书签名称</td>
+<td align="left">Esc 键</td>
+</tr>
+<tr>
+<td align="left">完成编辑书签名称</td>
+<td align="left">Return 键</td>
+</tr>
+<tr>
+<td align="left">创建包含书签视图中的所选书签和文件夹的文件夹</td>
+<td align="left">按下 Option 键点按右上角附近的“新建文件夹”按钮</td>
+</tr>
+<tr>
+<td align="left">删除书签</td>
+<td align="left">按住 Control 键点按书签，然后选取“删除”</td>
+</tr>
+</tbody></table>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">wanggh8</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://wanggh8.gitee.io/MacOS/Mac%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/">https://wanggh8.gitee.io/MacOS/Mac%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="http://www.opensource.org/licenses/Apache-2.0" target="_blank">Apache-2.0</a> 许可协议。转载请注明来自 <a href="https://wanggh8.gitee.io" target="_blank">Petithao</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/MacOS/">MacOS</a></div><div class="post_share"><div class="social-share" data-image="/images/MacOS.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/MacOS/MacOS%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/"><img class="prev-cover" data-lazy-src="/images/MacOS.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">MacOS开源软件</div></div></a></div><div class="next-post pull-right"><a href="/Android/Activity/"><img class="next-cover" data-lazy-src="/images/android-black.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Android Activity</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/IOS/Xcode/" title="Xcode"><img class="relatedPosts_cover" data-lazy-src="/images/MacOS.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-25</div><div class="relatedPosts_title">Xcode</div></div></a></div><div class="relatedPosts_item"><a href="/MacOS/MacOS开源软件/" title="MacOS开源软件"><img class="relatedPosts_cover" data-lazy-src="/images/MacOS.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-25</div><div class="relatedPosts_title">MacOS开源软件</div></div></a></div></div></div></article></main><footer id="footer" style="background-image: url(/images/MacOS.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2020 By wanggh8</div><div class="icp"><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/"><img class="icp-icon" src="/img/icp.png"/><span>豫ICP备20009142号-1</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script></div></body></html>

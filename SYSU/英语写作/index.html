@@ -1,0 +1,472 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>英语写作 | Petithao</title><meta name="description" content="考研英语写作总结"><meta name="keywords" content="考研,英语"><meta name="author" content="wanggh8"><meta name="copyright" content="wanggh8"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/head.jpg"><link rel="canonical" href="https://wanggh8.gitee.io/SYSU/%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="英语写作"><meta property="og:url" content="https://wanggh8.gitee.io/SYSU/%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C/"><meta property="og:site_name" content="Petithao"><meta property="og:description" content="考研英语写作总结"><meta property="og:image" content="https://wanggh8.gitee.io/img/default_cover.jpg"><meta property="article:published_time" content="2019-05-09T12:54:51.000Z"><meta property="article:modified_time" content="2020-10-19T16:00:00.000Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"mysearch.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: false,
+  highlightLang: false,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isSidebar: true,
+  postUpdate: '2020-10-20 00:00:00'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.1.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">59</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">21</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%88%99"><span class="toc-number">1.</span> <span class="toc-text">基本原则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%95%BF%E7%9F%AD%E5%8F%A5%E5%8E%9F%E5%88%99"><span class="toc-number">1.1.</span> <span class="toc-text">长短句原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E5%8F%A5%E5%8E%9F%E5%88%99"><span class="toc-number">1.2.</span> <span class="toc-text">主题句原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%8C%E4%B8%89%E5%8E%9F%E5%88%99"><span class="toc-number">1.3.</span> <span class="toc-text">一二三原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%AD%E8%AF%AD%E4%BC%98%E5%85%88%E5%8E%9F%E5%88%99"><span class="toc-number">1.4.</span> <span class="toc-text">短语优先原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%85%B3%E8%81%94%E8%AF%8D"><span class="toc-number">1.5.</span> <span class="toc-text">使用关联词</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B9%B6%E5%88%97%E9%80%92%E8%BF%9B"><span class="toc-number">1.5.1.</span> <span class="toc-text">并列递进</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BD%AC%E6%8A%98"><span class="toc-number">1.5.2.</span> <span class="toc-text">转折</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%A0%E6%9E%9C"><span class="toc-number">1.5.3.</span> <span class="toc-text">因果</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.5.4.</span> <span class="toc-text">总结</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%B8%83%E5%B1%80"><span class="toc-number">2.</span> <span class="toc-text">文章布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E6%AE%B5"><span class="toc-number">2.1.</span> <span class="toc-text">首段</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%95%E5%87%BA%E8%AF%9D%E9%A2%98"><span class="toc-number">2.1.1.</span> <span class="toc-text">引出话题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E7%A4%BA%E5%8F%98%E5%8C%96"><span class="toc-number">2.1.2.</span> <span class="toc-text">表示变化</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E4%BD%93"><span class="toc-number">2.2.</span> <span class="toc-text">主体</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E8%A1%A8%E5%88%86%E6%9E%90"><span class="toc-number">2.2.1.</span> <span class="toc-text">图表分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BE%E4%BE%8B"><span class="toc-number">2.2.2.</span> <span class="toc-text">举例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%82%E7%82%B9"><span class="toc-number">2.2.3.</span> <span class="toc-text">观点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%95%E5%87%BA%E5%8E%9F%E5%9B%A0"><span class="toc-number">2.2.4.</span> <span class="toc-text">引出原因</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">2.2.5.</span> <span class="toc-text">优缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E7%A4%BA%E9%87%8D%E8%A6%81"><span class="toc-number">2.2.6.</span> <span class="toc-text">表示重要</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E7%A4%BA%E6%8E%AA%E6%96%BD"><span class="toc-number">2.2.7.</span> <span class="toc-text">表示措施</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E7%A4%BA%E4%BA%8B%E5%AE%9E"><span class="toc-number">2.2.8.</span> <span class="toc-text">表示事实</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AF%94%E8%BE%83"><span class="toc-number">2.2.9.</span> <span class="toc-text">比较</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E7%A4%BA%E6%95%B0%E9%87%8F"><span class="toc-number">2.2.10.</span> <span class="toc-text">表示数量</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%BE%E6%AE%B5"><span class="toc-number">2.3.</span> <span class="toc-text">尾段</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E5%87%BA%E7%BB%93%E8%AE%BA"><span class="toc-number">2.3.1.</span> <span class="toc-text">提出结论</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%B7%E5%8F%AC%E5%BB%BA%E8%AE%AE"><span class="toc-number">2.3.2.</span> <span class="toc-text">号召建议</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%84%E7%A4%BA%E5%90%8E%E6%9E%9C"><span class="toc-number">2.3.3.</span> <span class="toc-text">预示后果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E5%8F%A5%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">高级句式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8B%AC%E7%AB%8B%E4%B8%BB%E6%A0%BC"><span class="toc-number">3.1.</span> <span class="toc-text">独立主格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%80%92%E8%A3%85%E5%8F%A5"><span class="toc-number">3.2.</span> <span class="toc-text">倒装句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A2%AB%E5%8A%A8%E5%8F%A5"><span class="toc-number">3.3.</span> <span class="toc-text">被动句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%BA%E8%B0%83%E5%8F%A5"><span class="toc-number">3.4.</span> <span class="toc-text">强调句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E8%AF%AD%E4%BB%8E%E5%8F%A5"><span class="toc-number">3.5.</span> <span class="toc-text">主语从句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E4%B8%BB%E8%AF%AD%E4%BB%8E%E5%8F%A5"><span class="toc-number">3.5.1.</span> <span class="toc-text">常规主语从句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BD%A2%E5%BC%8F%E4%B8%BB%E8%AF%AD%E4%BB%8E%E5%8F%A5"><span class="toc-number">3.5.2.</span> <span class="toc-text">形式主语从句</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8D%E8%AF%8D%E6%80%A7%E4%BB%8E%E5%8F%A5"><span class="toc-number">3.6.</span> <span class="toc-text">名词性从句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%BE%E8%AF%AD%E4%BB%8E%E5%8F%A5"><span class="toc-number">3.6.1.</span> <span class="toc-text">宾语从句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E8%AF%AD%E4%BB%8E%E5%8F%A5"><span class="toc-number">3.6.2.</span> <span class="toc-text">表语从句</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E4%BD%8D%E8%AF%AD%E4%BB%8E%E5%8F%A5"><span class="toc-number">3.7.</span> <span class="toc-text">同位语从句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8A%B6%E8%AF%AD%E4%BB%8E%E5%8F%A5"><span class="toc-number">3.8.</span> <span class="toc-text">状语从句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E8%AF%AD%E4%BB%8E%E5%8F%A5"><span class="toc-number">3.9.</span> <span class="toc-text">定语从句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E8%AF%8D%E7%9F%AD%E8%AF%AD%E5%81%9A%E5%AE%9A%E8%AF%AD%E6%88%96%E7%8A%B6%E8%AF%AD"><span class="toc-number">3.10.</span> <span class="toc-text">分词短语做定语或状语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E8%AF%8D%E5%BC%95%E5%AF%BC%E7%9A%84%E5%88%86%E8%AF%8D%E7%9F%AD%E8%AF%AD"><span class="toc-number">3.11.</span> <span class="toc-text">介词引导的分词短语</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%8D%E6%B1%87%E6%9B%BF%E6%8D%A2"><span class="toc-number">4.</span> <span class="toc-text">词汇替换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E4%BD%9C%E8%AF%8D%E6%B1%87"><span class="toc-number">5.</span> <span class="toc-text">写作词汇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E4%BF%9D%E6%8A%A4%E7%B1%BB"><span class="toc-number">5.1.</span> <span class="toc-text">环境保护类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E4%BF%9D%E6%8A%A4"><span class="toc-number">5.1.1.</span> <span class="toc-text">环境保护</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8A%82%E8%83%BD%E5%87%8F%E6%8E%92"><span class="toc-number">5.1.2.</span> <span class="toc-text">节能减排</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E6%81%B6%E5%8C%96"><span class="toc-number">5.1.3.</span> <span class="toc-text">环境恶化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E7%84%B6%E7%81%BE%E5%AE%B3"><span class="toc-number">5.1.4.</span> <span class="toc-text">自然灾害</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%99%BD%E8%89%B2%E6%B1%A1%E6%9F%93"><span class="toc-number">5.1.5.</span> <span class="toc-text">白色污染</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A9%BA%E6%B0%94%E6%B1%A1%E6%9F%93"><span class="toc-number">5.1.6.</span> <span class="toc-text">空气污染</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%99%E8%82%B2%E6%96%87%E5%8C%96%E7%B1%BB"><span class="toc-number">5.2.</span> <span class="toc-text">教育文化类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%A6%E4%BD%8D"><span class="toc-number">5.2.1.</span> <span class="toc-text">学位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%A6%E6%A0%A1"><span class="toc-number">5.2.2.</span> <span class="toc-text">学校</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%99%E8%82%B2"><span class="toc-number">5.2.3.</span> <span class="toc-text">教育</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8B%9B%E7%94%9F%E5%B0%B1%E4%B8%9A"><span class="toc-number">5.2.4.</span> <span class="toc-text">招生就业</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E5%8C%96"><span class="toc-number">5.2.5.</span> <span class="toc-text">文化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E8%A1%8C%E6%96%87%E5%8C%96"><span class="toc-number">5.2.6.</span> <span class="toc-text">流行文化</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E7%94%9F%E5%93%B2%E7%90%86%E7%B1%BB"><span class="toc-number">5.3.</span> <span class="toc-text">人生哲理类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8B%AC%E7%AB%8B"><span class="toc-number">5.3.1.</span> <span class="toc-text">独立</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9D%9A%E6%8C%81"><span class="toc-number">5.3.2.</span> <span class="toc-text">坚持</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%A1%E5%BF%83"><span class="toc-number">5.3.3.</span> <span class="toc-text">信心</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%88%E4%BD%9C"><span class="toc-number">5.3.4.</span> <span class="toc-text">合作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B9%90%E8%A7%82"><span class="toc-number">5.3.5.</span> <span class="toc-text">乐观</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BE%E4%BC%9A%E7%83%AD%E7%82%B9%E7%B1%BB"><span class="toc-number">5.4.</span> <span class="toc-text">社会热点类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%81%A5%E5%BA%B7"><span class="toc-number">5.4.1.</span> <span class="toc-text">健康</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%A4%E4%BB%A3%E5%85%B3%E7%B3%BB"><span class="toc-number">5.4.2.</span> <span class="toc-text">两代关系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BE%E4%BC%9A%E5%85%AC%E5%BE%B7"><span class="toc-number">5.4.3.</span> <span class="toc-text">社会公德</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%81%8C%E4%B8%9A%E9%81%93%E5%BE%B7"><span class="toc-number">5.4.4.</span> <span class="toc-text">职业道德</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%A4%E9%80%9A"><span class="toc-number">5.4.5.</span> <span class="toc-text">交通</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%8F%E6%B5%8E%E7%AE%A1%E7%90%86"><span class="toc-number">5.4.6.</span> <span class="toc-text">经济管理</span></a></li></ol></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(/img/default_cover.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Petithao</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">英语写作</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-05-09T12:54:51.000Z" title="发表于 2019-05-09 20:54:51">2019-05-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-10-19T16:00:00.000Z" title="更新于 2020-10-20 00:00:00">2020-10-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%80%83%E7%A0%94/">考研</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h2 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h2><h3 id="长短句原则"><a href="#长短句原则" class="headerlink" title="长短句原则"></a>长短句原则</h3><p>开头段：用一长一短，先长后短</p>
+<p>主体段：先用一个短句解释主要意思，然后在阐述几个要点的时候采用先短后长的句群形式</p>
+<p>结尾段：一长一短，总结升华</p>
+<h3 id="主题句原则"><a href="#主题句原则" class="headerlink" title="主题句原则"></a>主题句原则</h3><p>表明主体和观点的中心句放在文章开头或者结尾</p>
+<h3 id="一二三原则"><a href="#一二三原则" class="headerlink" title="一二三原则"></a>一二三原则</h3><p>使用代表顺序的关键性标签，理清文章结构，推荐表达：</p>
+<ul>
+<li><strong>to begin with, then, furthermore, finally</strong></li>
+<li><strong>to start with, next, in addition, finally</strong></li>
+<li><strong>first and foremost, besides, last but not least</strong></li>
+<li><strong>most important of all, moreover, finally</strong></li>
+</ul>
+<p>两方面时的表达：</p>
+<ul>
+<li><strong>on the one hand, on the other hand</strong></li>
+<li><strong>for one thing, for another thing</strong></li>
+</ul>
+<h3 id="短语优先原则"><a href="#短语优先原则" class="headerlink" title="短语优先原则"></a>短语优先原则</h3><p>使用短语可以增加文章亮点，也可以凑字数</p>
+<h3 id="使用关联词"><a href="#使用关联词" class="headerlink" title="使用关联词"></a>使用关联词</h3><p>使用关联词使句子间的联系更加紧密，过渡更加自然</p>
+<h4 id="并列递进"><a href="#并列递进" class="headerlink" title="并列递进"></a>并列递进</h4><ul>
+<li><strong>besides</strong>：此外；而且；再说；以及</li>
+<li><strong>furthermore</strong>：此外；而且；再者</li>
+<li><strong>moreover</strong>：此外；而且</li>
+<li><strong>not only but also</strong>：不仅， 也</li>
+<li><strong>What is more</strong>：此外</li>
+<li><strong>in addition</strong>：此外</li>
+</ul>
+<h4 id="转折"><a href="#转折" class="headerlink" title="转折"></a>转折</h4><ul>
+<li><p><strong>in spite of</strong>：尽管；不顾；虽然，后跟名词。例如：In spite of our best efforts, we weren’t able to locate the name of the author of these photographs.</p>
+</li>
+<li><p><strong>despite</strong>：不管；尽管；任凭，后面可跟名词、动词ing或句子</p>
+</li>
+<li><p><strong>despite that</strong>：尽管如此，后跟句子</p>
+</li>
+<li><p><strong>however</strong>：然而；不过</p>
+</li>
+<li><p><strong>nevertheless</strong>：然而，与后面的句子通过逗号隔开。例如：Save your breath not to ask me of this question again. Nevertheless, you still won’t let it go.</p>
+</li>
+<li><p><strong>notwithstanding</strong>：尽管</p>
+</li>
+<li><p><strong>yet</strong>：然而；但是</p>
+</li>
+</ul>
+<h4 id="因果"><a href="#因果" class="headerlink" title="因果"></a>因果</h4><ul>
+<li><strong>therefore</strong>：因此，常用逗号与从句隔开</li>
+<li><strong>as a result</strong>：因此；结果是；作为结果</li>
+<li><strong>so that</strong>：因此；以便</li>
+<li><strong>for this reason</strong>：为此；由于这个原因</li>
+<li><strong>consequently</strong>：因此</li>
+<li><strong>due to</strong>：由于</li>
+<li><strong>thanks to</strong>：由于；幸亏；多亏</li>
+<li><strong>because of</strong>：因为</li>
+</ul>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ul>
+<li><strong>in conclusion</strong>：总之；总而言之，单独用，用逗号与主句隔开</li>
+<li><strong>to sum up</strong>：概括地说。例如：If I had to sum up in one phrase what makes a good manager, I’d say that it’s that ability to make decisions.</li>
+<li><strong>in summary</strong>：总之；总结</li>
+<li><strong>in brief</strong>：简言之；简而言之</li>
+</ul>
+<h2 id="文章布局"><a href="#文章布局" class="headerlink" title="文章布局"></a>文章布局</h2><h3 id="首段"><a href="#首段" class="headerlink" title="首段"></a>首段</h3><h4 id="引出话题"><a href="#引出话题" class="headerlink" title="引出话题"></a>引出话题</h4><ol>
+<li><p>With the development of science and technology, more and more people believe / (come to realize) that…</p>
+<p>随着科技的发展,越来越多的人认为…</p>
+</li>
+<li><p>When it comes to …., some people believe that…. Others argue/claim that the opposite/reverse is true. There is probably some truth in both arguments/statements, but I tend to the former/latter.</p>
+<p>对立法——先引出其他人的不同看法，然后提出自己的看法或者偏向于某一看法，适用于有争议性的主题</p>
+</li>
+<li><p>Recently the rise in the problem/phenomenon of … has aroused public/popular/wide/worldwide concern.</p>
+<p>现象法——引出要剖析的现象或者问题，然后评论</p>
+</li>
+<li><p>It goes without saying that we cannot be young forever. </p>
+<p>适用于自编名言</p>
+</li>
+<li><p>As aproverb says，“Where there is a will，there is a way. “</p>
+<p>适用于谚语</p>
+</li>
+<li><p>From the graph（table，chart）listed above，it can be seen that</p>
+<p>适用于图表类</p>
+</li>
+<li><p>According to a recent survey, about 78.9% of the college students want to further their study after their graduation.  </p>
+<p>适用于调查类</p>
+</li>
+</ol>
+<h4 id="表示变化"><a href="#表示变化" class="headerlink" title="表示变化"></a>表示变化</h4><ol>
+<li>Great changes have taken place in our life．</li>
+<li>Some changes have taken place in the past five years．</li>
+</ol>
+<h3 id="主体"><a href="#主体" class="headerlink" title="主体"></a>主体</h3><p>表明自己观点，使用关联词组织论证</p>
+<p>3种递进关系词</p>
+<ol>
+<li>first and foremost, besides, last but not least</li>
+<li>to begin with, then, furthermore, finally</li>
+<li>to start with, next, in addition, finally</li>
+<li>most important of all, moreover, finally</li>
+</ol>
+<p>出现两点情况，使用：</p>
+<ol>
+<li>on the one hand, on the other hand</li>
+<li>for one thing, for another thing</li>
+</ol>
+<h4 id="图表分析"><a href="#图表分析" class="headerlink" title="图表分析"></a>图表分析</h4><ol>
+<li><p>As is shown in the graph…  </p>
+<p>如图所示…</p>
+</li>
+<li><p>As can be seen from the table, …  </p>
+<p>从表格中可以看出… </p>
+</li>
+<li><p>The graph shows that…  </p>
+<p>图表显示… </p>
+</li>
+<li><p>From the chart, we know that…  </p>
+<p>从这张表中,我们可知…</p>
+</li>
+<li><p>All these data clearly prove the fact that… </p>
+<p>所有这些数据明显证明这一事实,即… </p>
+</li>
+<li><p>The increase of …. in the city has reached to 20%. </p>
+<p>这个城市的….增长已达到20%.</p>
+</li>
+<li><p>In 1985, the number remained the same. </p>
+<p>1985年,这个数字保持不变.</p>
+</li>
+<li><p>There was a gradual decline in 1989.</p>
+<p>1989年,出现了逐渐下降的情况.</p>
+</li>
+<li><p>According to statistics proved by …, it can be seen that …</p>
+</li>
+</ol>
+<h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><ol>
+<li>…is often cited as an example.</li>
+<li>A good case in point is …</li>
+</ol>
+<h4 id="观点"><a href="#观点" class="headerlink" title="观点"></a>观点</h4><ol>
+<li><p>People’s views on… vary from person to person. Some hold that… . However, others believe that….</p>
+<p>人们对……的观点因人而异。有些人认为…..然而其他人却认为……</p>
+</li>
+<li><p>Different people hold different attitudes toward (failure). Some hold that… . However, others believe that….</p>
+<p>对(失败)人们的态度各不相同。</p>
+</li>
+<li><p>Attitudes towards (drugs) vary from person to person. Some hold that… . However, others believe that….</p>
+<p>人们对待吸毒的态度因人而异。</p>
+</li>
+<li><p>There is a grain of truth in these statements, but they ignore a more important fact.</p>
+</li>
+<li><p>Contrary to what is widely accepted, I maintain that </p>
+</li>
+</ol>
+<h4 id="引出原因"><a href="#引出原因" class="headerlink" title="引出原因"></a>引出原因</h4><ol>
+<li>A number of factors might contribute to （lead to）（account for）the phenomenon（problem）.</li>
+<li>The reasons for this are as follows．</li>
+<li>The reason for this is not far to seek.</li>
+</ol>
+<h4 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h4><ol>
+<li><p>There is no doubt that it has its negative effects as well as positive effects.</p>
+<p>毫无疑问，它有负面影响和积极影响。</p>
+</li>
+<li><p>It is of great benefit to us</p>
+</li>
+</ol>
+<h4 id="表示重要"><a href="#表示重要" class="headerlink" title="表示重要"></a>表示重要</h4><ol>
+<li>It plays an important role in our life．</li>
+<li>It is important（necessary，difficult，convenient， possible）for sb．to do sth</li>
+</ol>
+<h4 id="表示措施"><a href="#表示措施" class="headerlink" title="表示措施"></a>表示措施</h4><ol>
+<li>Some measures should be taken to deal with the problem that we are faced with.</li>
+<li>We should try our best to overcome the difficulties that we are faced with．</li>
+<li>We should take some effective measures to solve the problems that we are faced with．</li>
+</ol>
+<h4 id="表示事实"><a href="#表示事实" class="headerlink" title="表示事实"></a>表示事实</h4><ol>
+<li>We cannot ignore the fact that．．．</li>
+<li>No one can deny the fact that．．． </li>
+<li>There is no denying the fact that．．． </li>
+<li>This is a phenomenon that many people are interested in． </li>
+</ol>
+<h4 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h4><ol>
+<li>A may be preferable to B, but A suffers from the disadvantages that…</li>
+<li>Compared with A，B．．． </li>
+<li>I prefer to read rather than watch TV．</li>
+</ol>
+<h4 id="表示数量"><a href="#表示数量" class="headerlink" title="表示数量"></a>表示数量</h4><ol>
+<li>The population in this city has now increased （decreased）to 800000． </li>
+<li>The output of July in this factory increased by 15％ compared with that of January．</li>
+</ol>
+<h3 id="尾段"><a href="#尾段" class="headerlink" title="尾段"></a>尾段</h3><h4 id="提出结论"><a href="#提出结论" class="headerlink" title="提出结论"></a>提出结论</h4><ol>
+<li><p>Taking all these factors into consideration, we naturally come to the conclusion that…</p>
+<p>把所有这些因素加以考虑，我们自然会得出结论……</p>
+</li>
+<li><p>Taking into account all these factors, we may reasonably come to the conclusion that…</p>
+<p>考虑所有这些因素，我们可能会得出合理的结论……</p>
+</li>
+<li><p>From what has been mentioned/discussed above，we can come to /draw the conclusion that ．．．</p>
+<p>考虑所有这些因素，我们可能会得出合理的结论……</p>
+</li>
+<li><p>Obviously, we can draw the conclusion that…</p>
+<p>显然，我们可以得出结论…</p>
+</li>
+</ol>
+<h4 id="号召建议"><a href="#号召建议" class="headerlink" title="号召建议"></a>号召建议</h4><ol>
+<li><p>It is high time that we took some measures to put an end to the trend  (后可跟定语从句). </p>
+<p>该是我们采取措施停止这一趋势的时候了。</p>
+</li>
+<li><p>Only in this way can we… (倒装句)</p>
+<p>只有这样,我们才能…</p>
+</li>
+<li><p>There is no doubt that enough concern must be paid to the problem of …</p>
+<p>毫无疑问，对……问题应予以足够的重视。</p>
+</li>
+<li><p>It is essential thar effective measures should be taken to correct the tendency.</p>
+<p>必须采取有效措施纠正这一趋势。</p>
+</li>
+<li><p>Following these suggestions may not guarantee the success, but the pay off might be worth the effort . It will not only benefit but also bring us an even brighter future.</p>
+<p>以下这些建议，并不能保证成功，但回报可能是值得的努力。这不仅将造福，也有利于…</p>
+</li>
+<li><p>With the efforts of all parts concerned, the problem will be solved thoroughly.</p>
+</li>
+</ol>
+<h4 id="预示后果"><a href="#预示后果" class="headerlink" title="预示后果"></a>预示后果</h4><ol>
+<li><p>No doubt, unless we take effective measures, it is very likely that…</p>
+<p>毫无疑问，除非我们采取有效措施，很可能会……</p>
+</li>
+<li><p>In summary, if we continue to ignore the above-mentioned issue, more problems will crop up.</p>
+</li>
+</ol>
+<h2 id="高级句式"><a href="#高级句式" class="headerlink" title="高级句式"></a>高级句式</h2><h3 id="独立主格"><a href="#独立主格" class="headerlink" title="独立主格"></a>独立主格</h3><h3 id="倒装句"><a href="#倒装句" class="headerlink" title="倒装句"></a>倒装句</h3><ol>
+<li>Only through these measures can we hope to solve the problem.</li>
+</ol>
+<h3 id="被动句"><a href="#被动句" class="headerlink" title="被动句"></a>被动句</h3><ol>
+<li>Some measures should be taken to deal with the problem.</li>
+<li>It is believed that…</li>
+</ol>
+<h3 id="强调句"><a href="#强调句" class="headerlink" title="强调句"></a>强调句</h3><p>是否是强调句有一个方法，就是将that以后的“句子的其余部分”拿出来单独看，看有没有缺成分，缺的是什么成分，再把谓语动词后面that前面的那部分，带到你认为缺成分的地方，如果放进去是一句完整的句子了，那就说明是强调句</p>
+<ol>
+<li><p>It is the times that produce their heroes.</p>
+<p>强调主语</p>
+</li>
+<li><p>It is English that Prof.Lin teaches us.</p>
+<p>强调宾语</p>
+</li>
+<li><p>It was in shanghai that I saw the film.</p>
+<p>强调状语</p>
+</li>
+</ol>
+<h3 id="主语从句"><a href="#主语从句" class="headerlink" title="主语从句"></a>主语从句</h3><h4 id="常规主语从句"><a href="#常规主语从句" class="headerlink" title="常规主语从句"></a>常规主语从句</h4><p>在主从复合句中充当主语，主语从句的连词主要有：</p>
+<p>从属连词：that whether</p>
+<p>连接代词：who whoever whom whose what whatever which whichever</p>
+<p>连接副词：when where how why whenever wherever however</p>
+<p>连词位于句首不能省略，主语从句的时态不受主句时态的影响和限制</p>
+<ol>
+<li>That he finished writing the composition in such a short time surprised us all.</li>
+<li>Whether we will go for an outing tomorrow remains unknown.</li>
+<li>Whom we must study for is a question of great importance.</li>
+<li>What caused the accident remains unknown.</li>
+</ol>
+<h4 id="形式主语从句"><a href="#形式主语从句" class="headerlink" title="形式主语从句"></a>形式主语从句</h4><p>形式主语 it 位于句首引导从句，真正主语搁置于句末。由于主语从句一般被认为是单数形式，形式主语的谓语动词、be动词+表语 均为单数第三人称形式或过去式。</p>
+<ol>
+<li>It is common knowledge that honesty is the best policy.</li>
+<li>It goes without saying that… </li>
+<li>It is universally acknowledged that…</li>
+</ol>
+<h3 id="名词性从句"><a href="#名词性从句" class="headerlink" title="名词性从句"></a>名词性从句</h3><p>主句谓语动词是现在或将来时，从句谓语动词可以用任何需要的时态</p>
+<p>主句谓语动词是过去时，从句谓语动词一般需用过去时或过去完成时。</p>
+<p>从句时态不受下列客观的条件影响：从句说明的是不受时间限制的事实或真理（客观真理）、从句表示的是反复出现的时态不变、从句的谓语动作仍在继续时，或者表示现在仍在的状态时，时态不变。</p>
+<h4 id="宾语从句"><a href="#宾语从句" class="headerlink" title="宾语从句"></a>宾语从句</h4><p>在主从复合句中充当宾语，位于<strong>及物动词</strong>、<strong>介词</strong>或<strong>复合谓语</strong>之后的从句称为宾语从句。宾语从句分为三类：动词的宾语从句，介词的宾语从句和形容词的宾语从句。宾语从句的语序必须是陈述语序。谓语动词、介词、动词不定式、动词现在分词、过去式、过去分词后面都能带宾语从句。有些形容词（ afraid, sure, glad 等）之后也可以带宾语从句。</p>
+<p>特点：</p>
+<ol>
+<li>连接词that引导宾语从句在句中无词义，不充当句子成分</li>
+<li>宾语从句的语序一律用陈述句语序</li>
+<li>宾语从句可以作及物动词、介词及形容词的宾语</li>
+<li>宾语从句的从属连词主要有 that , if , whether 。that 引导表示陈述句的宾语从句,而 if 和 whether 引导表示“是否”的宾语从句</li>
+<li>连接代词主要有 who, whom , whose , what , whoever , whomever , whosever, whatever,  whichever等.连接代词一般指疑问,但 what ,  whatever 除了指疑问外,也可以指陈述。</li>
+<li>如果从句太长，可以用形式宾语 it</li>
+<li>动词 find, feel, consider, make, believe等后面有宾语补足语的时候,则需要用it做形式宾语而将 that 宾语从句后置.I think it necessary that we take plenty of hot water every day .</li>
+<li>有些动词带宾语从句时需要在宾语与从句前加it这类动词主要有: hate, take , owe, have, see to.<ol>
+<li>I hate it when they talk with their mouths full of food.我讨厌他们满嘴食物时说话.（when引导时间状语从句，it是代词，代指这种情况）</li>
+<li>I hate it that i love you.我讨厌我爱你（it是形式宾语，that引导宾语从句）</li>
+<li>We take it that you will agree with us.（it是形式宾语，that引导宾语从句）</li>
+</ol>
+</li>
+<li>形容词的宾语从句常用来引导宾语从句的形容词有: sure, certain, glad, please, happy, sorry, afraid, satisfied, surprised</li>
+<li>if,whether在宾语从句中的区别<ol>
+<li>if和whether在作“是否”解时,引导宾语从句常放在动词know,ask,care,wonder,find out等之后,介词后一般不用if</li>
+<li>少数动词,如:leave,put,discuss,doubt后的宾语从句常用whether</li>
+<li>whether后可以加or not,但是if不可以.</li>
+<li>在不定式前只能用whether.如： I can’t decide whether to stay. 我不能决定是否留下</li>
+<li>避免歧义时,我们常用whether而不用if.</li>
+</ol>
+</li>
+</ol>
+<h4 id="表语从句"><a href="#表语从句" class="headerlink" title="表语从句"></a>表语从句</h4><h3 id="同位语从句"><a href="#同位语从句" class="headerlink" title="同位语从句"></a>同位语从句</h3><h3 id="状语从句"><a href="#状语从句" class="headerlink" title="状语从句"></a>状语从句</h3><p>表时间，原因，地点，条件，让步，转折等</p>
+<ol>
+<li>When the man is enjoying the cigarette, the smoke becmes a monster (怪物) which will devour him.</li>
+<li>Whatever the reason, there are still some problems with student use of computers.</li>
+</ol>
+<h3 id="定语从句"><a href="#定语从句" class="headerlink" title="定语从句"></a>定语从句</h3><p>修饰限制先行词</p>
+<ol>
+<li><p>There are many reasons why I want to study in your university.</p>
+</li>
+<li><p>Helen is the most beautiful girl that I have ever seen.</p>
+<p>~ the + 形容词最高级 + 名词 + (that) + 主语 + have ever + seen</p>
+</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<h3 id="分词短语做定语或状语"><a href="#分词短语做定语或状语" class="headerlink" title="分词短语做定语或状语"></a>分词短语做定语或状语</h3><ol>
+<li>Prof. Kang came to our university, giving us a lecture on how to acquire English better.</li>
+</ol>
+<h3 id="介词引导的分词短语"><a href="#介词引导的分词短语" class="headerlink" title="介词引导的分词短语"></a>介词引导的分词短语</h3><ol>
+<li><p>We cannot emphasize the importance of protecting our eyes too much.</p>
+<p>我们再怎么强调保护眼睛的重要性也不为过。</p>
+</li>
+<li></li>
+</ol>
+<h2 id="词汇替换"><a href="#词汇替换" class="headerlink" title="词汇替换"></a>词汇替换</h2><ol>
+<li>大多数人 most people→ the majority of the population </li>
+<li>经常 often→frequently </li>
+<li>我相信 I believe→ from my standpoint, from my perspective </li>
+<li>必须 must→ it is a must for us to… </li>
+<li>知道 know→ be aware of </li>
+<li>因为 because→in that </li>
+<li>最后 at last→eventually </li>
+<li>然而 but→however </li>
+<li>如果 if→provided that </li>
+<li>各行各业的人 all kinds of people→people from all walks of life </li>
+<li>引起，导致 lead to→contribute to </li>
+<li>人 people→individuals </li>
+<li>好的 good→desirable, benefitial </li>
+<li>坏的 bad→undesirable </li>
+<li>很多many→ numerous </li>
+<li>越来越more and more→ a increasing/mounting number of </li>
+<li>很very→extremely </li>
+<li>方面side→aspects </li>
+<li>表明 show→demonstrate, indicate </li>
+<li>利用 use→utilize </li>
+<li>因此/结果so→therefore </li>
+<li>部分 part→proportion </li>
+<li>提高 improve→enhance </li>
+<li>改变 change→transform </li>
+<li>强调/重视 emphasize→ attach great importance to </li>
+<li>培养 develop→cultivate </li>
+<li>破坏 destroy→undermine </li>
+<li>解决 deal with →tackle /figure out </li>
+<li>普遍的 everywhere→universal </li>
+<li>明显的obvious→apparent </li>
+<li>在当今社会in the modern society→in the current society </li>
+<li>使 make→enable</li>
+</ol>
+<p>​        1、individuals, characters, folks替换(people ,persons)<br>　　2、positive, favorable, rosy (美好的)，promising (有希望的)，perfect, pleasurable , excellent, outstanding, superior替换good<br>　　3、dreadful, unfavorable, poor, adverse, ill (有害的)替换bad 如果bad做表语，可以有be less impressive替换<br>　　eg.An army of college students indulge themselves in playing games,enjoying romance with girls/boys or killing time passively in their dorms. When it approaches to graduation ,as a result, they find their academic records are less impressive.<br>　　4、(an army of, an ocean of, a sea of, a multitude of ,a host of, many, if not most)替换many.<br>　　注：用many, if not most 一定要小心，many后一定要有词。<br>　　Eg. Many individuals, if not most, harbor the idea that….同理 用most, if not all ,替换most.<br>　　5、a slice of, quiet a few , several替换some<br>　　6、harbor the idea that, take the attitude that, hold the view that, it is widely shared that, it is universally acknowledged that)替think (因为是书面语，所以要加that)<br>　　7、affair ,business ,matter 替换thing<br>　　8、shared 代 common<br>　　9、reap huge fruits 替换get many benefits )<br>　　10、for my part ,from my own perspective 替换 in my opinion<br>　　11、Increasing(ly),growing 替换more and more( 注意没有growingly这种形式。所以当修饰名词时用increasing/growing.修饰形容词，副词用increasingly.<br>　　关注：英语六级简答题的命题规律和对策<br>　　Eg.sth has gained growing popularity.<br>　　Sth is increasingly popular with the advancement of sth.<br>　　12、little if anything, 或little or nothing替换hardly<br>　　13、beneficial, rewarding替换helpful,<br>　　14、shopper, client, consumer, purchaser, 替换customer<br>　　15、exceedingly, extremely, intensely 替换very<br>　　16、hardly necessary, hardly inevitable … 替换 unnecessary, avoidable<br>　　17、sth appeals to sb, sth exerts a tremendous fascination on sb 替换sb take interest in / sb. be interested in<br>　　18、capture one’s attention替换attract one’s attention.<br>　　19、facet, dimension , sphere代aspect<br>　　20、be indicative of ,be suggestive of ,be fearful of代 indicate, suggest ,fear<br>　　21、give rise to, lead to, result in, trigger 替换cause.<br>　　22、There are several reasons behind sth 替换..reasons for sth<br>　　23、desire 替换want.<br>　　24、pour attention into 替换pay attention to<br>　　25、bear in mind that 替换remember<br>　　26、enjoy, possess 替换have(注意process是过程的意思)<br>　　27、interaction替换communication<br>　　28、frown on sth替换 be against , disagree with sth<br>　　29、to name only a few, as an example替换 for example, for instance</p>
+<h2 id="写作词汇"><a href="#写作词汇" class="headerlink" title="写作词汇"></a>写作词汇</h2><h3 id="环境保护类"><a href="#环境保护类" class="headerlink" title="环境保护类"></a>环境保护类</h3><h4 id="环境保护"><a href="#环境保护" class="headerlink" title="环境保护"></a>环境保护</h4><p>提高环保意识 enhance environmental awareness<br>环境保护 environmental protection<br>保持生态系统 keep ecological balance<br>生态系统 ecosystem<br>自然保护区 nature reserve<br>可持续发展战略 sustainable development strategy<br>宜人的生活环境 pleasant living environment</p>
+<h4 id="节能减排"><a href="#节能减排" class="headerlink" title="节能减排"></a>节能减排</h4><p>节能（节约能源） save energy<br>减排（减少温室气体排放） reduce the emission of greenhouse gases<br>降低资源消耗率 slow down the rate of resource degradation<br>环保产品 environment-friendly products<br>全球变暖 global warming<br>低碳经济 low carbon economy<br>清洁可再生能源 clean renewable energy<br>核能 nuclear energy<br>太阳能 solar energy<br>大功率电器 high-power electrical appliance<br>二氧化碳 carbon dioxide<br>气候变化 climate change</p>
+<h4 id="环境恶化"><a href="#环境恶化" class="headerlink" title="环境恶化"></a>环境恶化</h4><p>环境恶化 environmental deterioration<br>乱砍滥伐 deforestation<br>防止过度利用森林 protect forests from overexploitation<br>水土流失 water and soil erosion<br>沙漠化 desertification<br>人口增长 population growth<br>野生动物保护 wildlife protection<br>濒危物种 endangered species<br>野生物种 wild species<br>商业捕鱼 commercial fishing<br>过度捕捞 overfishing<br>过度开发 reckless exploitation</p>
+<h4 id="自然灾害"><a href="#自然灾害" class="headerlink" title="自然灾害"></a>自然灾害</h4><p>自然灾害 natural disasters<br>大灾难 catastrophe<br>破坏性灾难性地震 destructive and disastrous earthquake<br>沙尘暴 sandstorm<br>沙丘 sand dune/hill<br>旱灾 drought<br>水灾 flood<br>雪灾 snowstorm<br>环境污染<br>环境治理<br>污染者负担的政策 “the-polluters-pay” policy<br>执法检查 law enforcement inspection<br>限期治理 undertake treatment within a prescribed limit of time</p>
+<h4 id="白色污染"><a href="#白色污染" class="headerlink" title="白色污染"></a>白色污染</h4><p>白色污染 white pollution<br>限制使用一次性塑料袋 limit/ban/prohibit the use of disposable plastic bags<br>可降解一次性塑料袋 throwaway bio-degradable plastic bags<br>一次性筷子 disposable chopsticks<br>垃圾处理<br>乱扔垃圾 litter<br>垃圾分类 garbage classification<br>丢弃 throw, discard<br>垃圾 trash, rubbish, garbage<br>城市垃圾无害处理 decontamination of urban refuse<br>三废 three types of wastes（waste water, waste gas, solid waster）<br>工业废弃物 industrial waste</p>
+<h4 id="空气污染"><a href="#空气污染" class="headerlink" title="空气污染"></a>空气污染</h4><p>空气污染浓度 air pollution concentration<br>汽车尾气排放 motor vehicle exhaust<br>尾气净化器 exhaust purifier<br>无铅汽油 lead-free gasoline<br>天然气汽车 gas-fueled vehicles<br>电动汽车 cell-driven vehicles<br>小排量汽车 small-engine vehicles<br>工业粉尘排放 industrial dust discharge<br>烟尘排放 soot emissions<br>矿物燃料（煤、石油、天然气） fossil fuels（coal, oil and natural gas）</p>
+<h3 id="教育文化类"><a href="#教育文化类" class="headerlink" title="教育文化类"></a>教育文化类</h3><h4 id="学位"><a href="#学位" class="headerlink" title="学位"></a>学位</h4><p>学士 bachelor’s degree<br>硕士 master’s degree<br>博士 doctor’s degree<br>获得学位 acquire degree<br>文科 arts<br>理科 science<br>文学硕士 Master of Arts（MA）<br>理学硕士 Master of Science（MS）<br>工商管理硕士 Master of Business Administration（MBA）<br>公共管理硕士 Master of Public Administration（MPA）<br>工程硕士 Master of Engineering（ME）<br>会计硕士 Master of Professional Accounting（MPAcc）<br>金融硕士 Master of Science in Finance（MSF）</p>
+<h4 id="学校"><a href="#学校" class="headerlink" title="学校"></a>学校</h4><p>幼儿园 nursery/kindergarten<br>小学 primary/elementary school<br>中学 middle school<br>综合性大学 university<br>学院 institute<br>高等教育 higher education<br>大学生 college/university students<br>大学毕业生 college/university graduates<br>商学院 business school<br>法学院 law school<br>研究生院 graduate school<br>教授 professor<br>全体教师 faculty<br>系 department<br>major 专业<br>教学设施 teaching facilities<br>食堂 dining hall<br>宿舍 dormitory<br>选修课 elective/optional course<br>学杂费 tuition fees and other expenses</p>
+<h4 id="教育"><a href="#教育" class="headerlink" title="教育"></a>教育</h4><p>终身教育 life-long education<br>素质教育 education for all-round development<br>义务教育 compulsory education<br>应试教育 exam-oriented education<br>成人教育 adult education<br>理论知识 theoretical knowledge<br>实践技能 practical skills<br>信息时代 information era<br>知识爆炸时代 era of knowledge explosion<br>影响学习成绩 affect school achievements<br>逃课 skip classes<br>学习成绩 academic performance<br>学习氛围 academic atmosphere<br>开阔眼界 broaden one’s horizon<br>激发兴趣 stimulate one’s interest<br>开发潜能 tap one’s potential<br>（学生）减负 reduce study load<br>文理分科 separation between liberal arts and science<br>放松的大学生活 relaxing college life</p>
+<h4 id="招生就业"><a href="#招生就业" class="headerlink" title="招生就业"></a>招生就业</h4><p>招生 recruitment<br>录取 enrollment<br>申请入学 apply for admission to/into…<br>高考 College Entrance Examination<br>考研 National Entrance Test for MA/MS Candidates<br>就业市场 job market<br>雇主 employer<br>雇员 employee<br>职业培训 vocational training</p>
+<h4 id="文化"><a href="#文化" class="headerlink" title="文化"></a>文化</h4><p>文化交流<br>文化交流 cultural exchange<br>文化融合 cultural blending/integration<br>传统中国文化 traditional Chinese culture<br>儒家 Confucianism<br>佛家 Buddhism<br>道家 Daoism/Taoism<br>京剧 Peking Opera<br>中国书法 Chinese calligraphy<br>西方文化 western cultures<br>启蒙运动 Enlightenment<br>人本主义 humanism<br>后现代主义 post-modernism<br>多元文化 multi-cultures, pluralistic/mosaic cultures<br>文化多元化 cultural diversity<br>保存珍惜 preserve and cherish<br>取其精华，去其糟粕 absorb its essence and resist its dark side<br>积极促进文化发展 promote cultural development positively<br>辉煌灿烂的文化遗产 splendid and glorious cultural heritage/legacy/relics<br>与时俱进 keep pace with times<br>跨文化交流 cross-cultural communication<br>文化差异 cultural differences<br>文化传统 cultural traditions<br>人类文明 human civilization<br>精神文明 spiritual civilization<br>主流文化 mainstream culture<br>解读经典 interpretation of classics</p>
+<h4 id="流行文化"><a href="#流行文化" class="headerlink" title="流行文化"></a>流行文化</h4><p>流行文化 popular culture<br>电视广告泛滥 the pervasive advertisement on TV<br>偶像崇拜 idol worship<br>上网成瘾 web/Internet addiction<br>虚拟生活 virtual life<br>网上交流 making friends online<br>网聊 chatting on the Internet<br>网络谣言 online gossip<br>网上购物 online shopping<br>网络监管 the Internet supervision<br>网络暴力 the Internet violence<br>不负责的言论 irresponsible remarks<br>购买彩票 buy lottery tickets<br>网络游戏 online games<br>数码产品 digital products<br>手机短信 text message<br>垃圾短信 junk message<br>手机入网 mobile phone subscription</p>
+<h3 id="人生哲理类"><a href="#人生哲理类" class="headerlink" title="人生哲理类"></a>人生哲理类</h3><h4 id="独立"><a href="#独立" class="headerlink" title="独立"></a>独立</h4><p>自立 self-dependence<br>溺爱 dote, spoil<br>独生子女 only child<br>激烈竞争 fierce competition<br>啃老族 boomerang kids, NEET(Not currently engaged in Education, Employment or Training)<br>不劳而获 reap without sowing</p>
+<h4 id="坚持"><a href="#坚持" class="headerlink" title="坚持"></a>坚持</h4><p>不断努力 make constant efforts<br>决不放弃 never give up<br>决不停止进步 never stop making progress<br>获得成功 achieve success<br>创新 innovation<br>勤奋 diligence<br>奋斗精神 striving spirit<br>人生观 outlook of life<br>世界观 world outlook<br>恒心 perseverance<br>耐心 patience</p>
+<h4 id="信心"><a href="#信心" class="headerlink" title="信心"></a>信心</h4><p>自信 self-confidence<br>谦虚 modesty<br>缺乏自信 lack of confidence<br>高估困难 exaggerate/overestimate difficulties<br>低估能力 underestimate one’s abilities</p>
+<h4 id="合作"><a href="#合作" class="headerlink" title="合作"></a>合作</h4><p>团队合作 teamwork<br>团队精神 team spirit<br>与他人合作 cooperate with others<br>齐心协力/众志成城 joint/cooperative efforts<br>互相帮助 help each other</p>
+<h4 id="乐观"><a href="#乐观" class="headerlink" title="乐观"></a>乐观</h4><p>保持乐观 keep optimistic<br>悲观 pessimism<br>悲观的 pessimistic<br>积极态度 positive attitude<br>仁慈 benevolence</p>
+<h3 id="社会热点类"><a href="#社会热点类" class="headerlink" title="社会热点类"></a>社会热点类</h3><h4 id="健康"><a href="#健康" class="headerlink" title="健康"></a>健康</h4><p>生理健康 physical health<br>心理健康 mental/psychological health/fitness<br>健康问题 health concern<br>亚健康 sub-health<br>公共卫生 public health<br>心态 state of mind<br>体育锻炼 physical exercises<br>均衡饮食 well-balance diet<br>垃圾食品 junk food<br>减肥/节食 go on a diet<br>提供医疗服务 provide medical services<br>牺牲健康 sacrifice health<br>短期经济利益 short-term economic benefits<br>全面禁烟 total tobacco ban<br>疾病 illness/disease<br>慢性病 chronic disease<br>传染病 infectious disease<br>癌症 cancer<br>医疗体制改革 reform of medical system</p>
+<h4 id="两代关系"><a href="#两代关系" class="headerlink" title="两代关系"></a>两代关系</h4><p>代沟 generation gap<br>弥合差距 bridge the gap<br>相互理解 mutual understanding<br>误解 misunderstanding<br>照顾 care, take care of, look after<br>虐待 mistreat, maltreat, ill-treat<br>老龄化社会 aging society<br>人口老龄化 population aging<br>老年人 old/aged people, the old/aged/elders/elderly, senior citizens<br>奉行孝道 practice filial piety</p>
+<h4 id="社会公德"><a href="#社会公德" class="headerlink" title="社会公德"></a>社会公德</h4><p>公德 public morality<br>传统美德 traditional virtues<br>责任 duty/responsibility<br>责任感 sense of responsibility<br>承担责任 shoulder/assume/undertake one’s duties/responsibilities<br>逃避责任 avoid/shirk/shun one’s duties/responsibilities<br>奉献 devote/dedicate; devotion/dedication<br>无私奉献 selfless devotion<br>信任危机 the crisis of trust<br>公德堕落 the corruption of public morality<br>道德缺失 the lack of moral sense<br>不道德行为 immoral behaviors<br>希望工程 Project Hope<br>中国红十字会 China Red Cross Foundation<br>慈善 charity<br>捐款 donate/donation<br>贫困乡村地区 poor rural areas<br>入学 start schooling<br>辍学 drop out of school<br>完成学业 finish school<br>尊老爱幼 to respect the old and care for the young<br>随地吐痰 spit everywhere<br>大声喧哗 make noise, talk loudly</p>
+<h4 id="职业道德"><a href="#职业道德" class="headerlink" title="职业道德"></a>职业道德</h4><p>空洞承诺 empty promise<br>虚假承诺 false promise<br>伪劣产品 fake commodities<br>欺诈行为 dishonest behaviors<br>诚信 honesty<br>学术腐败 academic corruption<br>剽窃抄袭 plagiarism<br>食品安全 food safety<br>工程质量 construction quality<br>地沟油 drainage oil<br>毒奶粉 poisonous milk powder<br>食品添加剂 food additives<br>过度上涨 excessive growth<br>非法广告 illegal ads<br>不公平竞争 unfair competitions<br>争抢利益 compete for benefits<br>治标不治本 address symptoms but not root causes<br>管理部门 administration department<br>监管部门 supervision department<br>商家 merchant<br>厂家 manufacturer<br>企业经营者 enterprise operator<br>有关当局 authorities concerned<br>收受贿赂 take bribes<br>漠视法律 disregard of laws<br>推卸责任 shift the blame onto…<br>消费者权益 consumers’ rights and interests<br>伪专家 unqualified experts<br>公正有效地履行职责 perform one’s tasks fairly and effectively<br>提供礼貌热情的服务 provide polite and hospitable services<br>腐败现象 corruption phenomenon</p>
+<h4 id="交通"><a href="#交通" class="headerlink" title="交通"></a>交通</h4><p>公交专用车道 bus lane<br>（机动车）单双号限行 odd-and-even license plate rule<br>早晚高峰 morning and evening peak<br>交通拥堵 traffic jam/congestion, heavy traffic<br>交通高峰期 rush hour<br>公共交通线路网 public transport network<br>尾号限行 traffic restrictions based on the last digit of license plate numbers<br>交通管制 traffic control<br>无车日 car-free day<br>交通事故 traffic accidents<br>私家车 private cars<br>发展公共交通 develop public transport<br>醉驾 drunk drive<br>酒后驾车 drive under the influence of alcohol<br>司机 driver<br>行人 pedestrian</p>
+<h4 id="经济管理"><a href="#经济管理" class="headerlink" title="经济管理"></a>经济管理</h4><p>经济危机 economic crisis, financial crisis, financial turmoil, financial meltdown<br>经济不景气 recession, bleeding economy, depression, sluggish economy<br>失业 lose one’s job, be unemployed, be redundant<br>失业加剧 job losses mount, unemployment climb<br>失业人数 unemployment<br>找工作 seek employment<br>找工作者 job seeker<br>严峻的就业形势 a tough job market<br>信心下滑 confidence slump<br>经济复苏 economic recovery<br>经济危机的影响 the crisis’ fallout<br>应对危机 face the crisis, meet the crisis, fight crisis<br>重建信心 confidence reconstruction<br>遏制衰退 contain declines<br>减缓衰退 slow down declines<br>安居工程 affordable/comfortable housing project<br>成本削减 cost-cutting<br>创造新的就业 generate new employment<br>刺激消费 stimulate consumer spending<br>恢复 revive, recovery, turnaround<br>积极的财政政策 proactive fiscal policy<br>减少裁员 refrain from laying off employees<br>减员 cut the salaried work force<br>结构调整 structural adjustment<br>经济刺激方案 stimulus package, stimulus plan<br>就业指导 career guidance<br>扩大内需 propel/drive/expand domestic demand<br>基础设施建设 infrastructure construction<br>减免税收 tax relief<br>实行节约 practice economy<br>适度宽松的货币政策 moderately loose monetary policy<br>政府紧急援助 government bailout<br>政府做某事的决心 government’s vow to do sth<br>市场经济体制 the market economy system<br>经济全球化 economic globalization<br>国际经济组织 international economic organization<br>科技进步 advancements in science and technology<br>跨国公司 multinationals<br>私营企业 private enterprise<br>汽车产业 automobile industry<br>房地产业 real estate industry<br>电信产业 telecommunication industry<br>国产品牌 domestic/national/Chinese brand<br>市场份额 market share/portion<br>公司 company/corporation<br>企业 enterprise<br>员工 staff/personnel<br>工作满意度 job satisfaction<br>工作压力 work/working pressure<br>提高福利待遇 improve welfare and treatment<br>吸引外资 attract foreign investment<br>法律保护 legal protection<br>深远的社会影响 profound social and economic impact<br>改革开放 the reform and opening-up<br>社会保障体系 social security system<br>失业 unemployment<br>住房问题 housing problem<br>公用基础设施 public infrastructure<br>摩天大楼 Skyscraper<br>可持续的城市发展 sustainable urban development<br>城市化 urbanization<br>城市人口 urban population<br>乡村人口 rural population</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">wanggh8</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://wanggh8.gitee.io/SYSU/%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C/">https://wanggh8.gitee.io/SYSU/%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="http://www.opensource.org/licenses/Apache-2.0" target="_blank">Apache-2.0</a> 许可协议。转载请注明来自 <a href="https://wanggh8.gitee.io" target="_blank">Petithao</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%80%83%E7%A0%94/">考研</a><a class="post-meta__tags" href="/tags/%E8%8B%B1%E8%AF%AD/">英语</a></div><div class="post_share"><div class="social-share" data-image="/img/default_cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/SYSU/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"><img class="prev-cover" data-lazy-src="/img/default_cover.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">计算机网络</div></div></a></div><div class="next-post pull-right"><a href="/SYSU/%E8%8B%B1%E8%AF%AD%E7%9C%9F%E9%A2%98%E8%AF%8D%E6%B1%87/"><img class="next-cover" data-lazy-src="/img/default_cover.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">真题词汇</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/SYSU/MyPlan/" title="My Plan"><img class="relatedPosts_cover" data-lazy-src="/img/default_cover.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2019-03-19</div><div class="relatedPosts_title">My Plan</div></div></a></div><div class="relatedPosts_item"><a href="/SYSU/专业词汇/" title="计算机专有词汇"><img class="relatedPosts_cover" data-lazy-src="/img/default_cover.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2019-03-28</div><div class="relatedPosts_title">计算机专有词汇</div></div></a></div><div class="relatedPosts_item"><a href="/SYSU/英语真题词汇/" title="真题词汇"><img class="relatedPosts_cover" data-lazy-src="/img/default_cover.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2019-05-06</div><div class="relatedPosts_title">真题词汇</div></div></a></div></div></div></article></main><footer id="footer" style="background-image: url(/img/default_cover.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2020 By wanggh8</div><div class="icp"><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/"><img class="icp-icon" src="/img/icp.png"/><span>豫ICP备20009142号-1</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script></div></body></html>
