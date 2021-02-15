@@ -1706,7 +1706,7 @@ canvas:not(#ribbon-canvas),
 #article-container figure.highlight {
   overflow: auto;
   margin: 0 0 1rem;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 0;
   background: #f6f8fa;
   color: #90a4ae;
@@ -1715,6 +1715,7 @@ canvas:not(#ribbon-canvas),
 blockquote {
   margin: 0 0 1rem;
   padding: 0.1rem 0.8rem;
+  border-radius: 4px;
   border-left: 0.2rem solid #49b1f5;
   background-color: var(--blockquote-bg);
   color: var(--blockquote-color);
