@@ -89,11 +89,11 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   .hljs-number {
     color: #D6CA86;
   }
-
+  /* 方法参数 */
   .hljs-params {
     color: #BBF0E4;
   }
-  
+
   .hljs-section,
   .hljs-meta {
     color: #F2A55F;
