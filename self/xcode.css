@@ -103,8 +103,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
 
   .hljs-type,
   .hljs-built_in,
-  .hljs-builtin-name,
-  .hljs-params {
+  .hljs-builtin-name {
     color: #BBF0E4;
   }
   
