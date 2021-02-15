@@ -66,6 +66,11 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   .hljs-name {
     color: #EE81B1;
   }
+
+  .hljs-built_in
+  .hljs-builtin-name {
+    color: #D5BCFA;
+  }
   
   .hljs-variable,
   .hljs-template-variable {
@@ -84,6 +89,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   }
   
   .hljs-title,
+  /* symbolic constant, interned string, goto label */
   .hljs-symbol,
   .hljs-bullet,
   .hljs-number {
@@ -95,7 +101,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
     color: #F2A55F;
   }
   
-  
+  /* class or class-level declaration (interfaces, traits, modules, etc), typically includes a title submode */
   .hljs-class .hljs-title,
   .hljs-type,
   .hljs-built_in,
@@ -107,9 +113,9 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   .hljs-attr {
     color: #C4996F;
   }
-  
+  /* parsed section inside a literal string */
   .hljs-subst {
-    color: #000;
+    color: #EF8876;
   }
   
   .hljs-formula {
