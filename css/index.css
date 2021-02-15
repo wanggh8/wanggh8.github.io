@@ -1760,7 +1760,7 @@ blockquote footer cite:before {
 }
 #article-container figure.highlight pre {
   margin: 0;
-  padding: 0 0;
+  padding: 8 0;
   border: none;
 }
 #article-container figure.highlight .line.marked {
@@ -1814,7 +1814,7 @@ blockquote footer cite:before {
   overflow: hidden;
   border-radius: 7px;
   width: 100%;
-  height: 1.5rem;
+  height: 0rem;
   background: #e6ebf1;
   color: #90a4ae;
   font-size: 14px;
