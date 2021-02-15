@@ -35,9 +35,9 @@
 
 /* 代碼框滾動條 (需要可配置，默認為主題主顔色）*/
 /* 不需要可以不用配置這個 */
-/* #article-container figure.highlight table::-webkit-scrollbar-thumb {
-    background: #1E1E1E !important
-} */
+#article-container figure.highlight table::-webkit-scrollbar-thumb {
+    background: #292a2f !important
+}
 
 
 #article-container figure.highlight .hljs {
