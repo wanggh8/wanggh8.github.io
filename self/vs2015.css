@@ -10,27 +10,27 @@
 /* 必須配置(把下面.hljs的color和background複製到這裏來) */
 #article-container pre, 
 #article-container figure.highlight {
-  background: #1E1E1E;  
+  background: #292a2f;  
   color: #DCDCDC
 }
 
 /* 代碼框工具欄 (如果你關掉了copy、lang和shrink,可不用配置這個 */
 #article-container figure.highlight .highlight-tools {
-    color: #DCDCDC;
-    background: #1E1E1E
+    color: #747478;
+    background: #292A2F
 }
 
 /* 代碼框行數(如果已經關掉line_number,可以不用配置這個) */
 #article-container figure.highlight .gutter pre {
-    background-color: #1E1E1E;
-    color: #DCDCDC
+    background-color: #292A2F;
+    color: #747478
 }
 
 /* 代碼塊figcaption配置(hexo自帶標簽https://hexo.io/zh-tw/docs/tag-plugins.html#Code-Block) */
 /* 不需要可以不用配置這個 */
 #article-container figure.highlight figcaption,
 #article-container figure.highlight figcaption a {
-  color: #DCDCDC !important
+  color: #747478 !important
 }
 
 /* 代碼框滾動條 (需要可配置，默認為主題主顔色）*/
@@ -44,7 +44,7 @@
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    background: #1E1E1E;
+    background: #292A2F;
     color: #DCDCDC;
   }
   
