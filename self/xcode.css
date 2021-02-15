@@ -58,6 +58,10 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
     color: #818C97;
   }
   
+  .hljs-variable{
+    color: #89C0B3;
+  }
+
   .hljs-tag,
   .hljs-attribute,
   .hljs-keyword,
@@ -65,11 +69,6 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   .hljs-literal,
   .hljs-name {
     color: #EE81B1;
-  }
-  
-  .hljs-variable,
-  .hljs-template-variable {
-    color: #89C0B3;
   }
   
   .hljs-code,
