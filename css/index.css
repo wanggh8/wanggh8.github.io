@@ -1706,6 +1706,7 @@ canvas:not(#ribbon-canvas),
 #article-container figure.highlight {
   overflow: auto;
   margin: 0 0 1rem;
+  border-radius: 7px;
   padding: 0;
   background: #f6f8fa;
   color: #90a4ae;

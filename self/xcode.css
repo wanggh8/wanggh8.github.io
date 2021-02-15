@@ -58,7 +58,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
     color: #818C97;
   }
   
-
+  .hljs-attribute,
   .hljs-variable{
     color: #89C0B3;
   }
