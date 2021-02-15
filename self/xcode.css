@@ -83,7 +83,6 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
     color: #7197F8;
   }
   
-
   /* symbolic constant, interned string, goto label */
   .hljs-symbol,
   .hljs-bullet,
@@ -95,10 +94,14 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   .hljs-meta {
     color: #F2A55F;
   }
+
+  .hljs-function .hljs-title {
+    color: #69AEC8;
+  }
   
   /* class or class-level declaration (interfaces, traits, modules, etc), typically includes a title submode */
   .hljs-class .hljs-title {
-    color: #69AEC8;
+    color: #89DCFB;
   }
 
   .hljs-type,
