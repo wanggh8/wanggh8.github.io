@@ -1702,88 +1702,13 @@ canvas:not(#ribbon-canvas),
     transform: translateX(0);
   }
 }
-figure.highlight table::-webkit-scrollbar-thumb {
-  background: #1d202c;
-}
-figure.highlight pre .deletion {
-  color: #bf42bf;
-}
-figure.highlight pre .addition {
-  color: #105ede;
-}
-figure.highlight pre .meta {
-  color: #c792ea;
-}
-figure.highlight pre .comment {
-  color: #676e95;
-}
-figure.highlight pre .variable,
-figure.highlight pre .attribute,
-figure.highlight pre .regexp,
-figure.highlight pre .ruby .constant,
-figure.highlight pre .xml .tag .title,
-figure.highlight pre .xml .pi,
-figure.highlight pre .xml .doctype,
-figure.highlight pre .html .doctype,
-figure.highlight pre .css .id,
-figure.highlight pre .tag .name,
-figure.highlight pre .css .class,
-figure.highlight pre .css .pseudo {
-  color: #ff5370;
-}
-figure.highlight pre .tag {
-  color: #89ddff;
-}
-figure.highlight pre .number,
-figure.highlight pre .preprocessor,
-figure.highlight pre .literal,
-figure.highlight pre .params,
-figure.highlight pre .constant,
-figure.highlight pre .command {
-  color: #f78c6c;
-}
-figure.highlight pre .built_in {
-  color: #ffcb6b;
-}
-figure.highlight pre .ruby .class .title,
-figure.highlight pre .css .rules .attribute,
-figure.highlight pre .string,
-figure.highlight pre .value,
-figure.highlight pre .inheritance,
-figure.highlight pre .header,
-figure.highlight pre .ruby .symbol,
-figure.highlight pre .xml .cdata,
-figure.highlight pre .special,
-figure.highlight pre .number,
-figure.highlight pre .formula {
-  color: #c3e88d;
-}
-figure.highlight pre .keyword,
-figure.highlight pre .title,
-figure.highlight pre .css .hexcolor {
-  color: #89ddff;
-}
-figure.highlight pre .function,
-figure.highlight pre .python .decorator,
-figure.highlight pre .python .title,
-figure.highlight pre .ruby .function .title,
-figure.highlight pre .ruby .title .keyword,
-figure.highlight pre .perl .sub,
-figure.highlight pre .javascript .title,
-figure.highlight pre .coffeescript .title {
-  color: #82aaff;
-}
-figure.highlight pre .tag .attr,
-figure.highlight pre .javascript .function {
-  color: #c792ea;
-}
 #article-container pre,
 #article-container figure.highlight {
   overflow: auto;
   margin: 0 0 1rem;
   padding: 0;
-  background: #292d3e;
-  color: #a6accd;
+  background: #f6f8fa;
+  color: #90a4ae;
   line-height: 1.6;
 }
 blockquote {
@@ -1825,7 +1750,7 @@ blockquote footer cite:before {
 #article-container pre code {
   padding: 0;
   background: none;
-  color: #a6accd;
+  color: #90a4ae;
   text-shadow: none;
 }
 #article-container figure.highlight {
@@ -1837,7 +1762,7 @@ blockquote footer cite:before {
   border: none;
 }
 #article-container figure.highlight .line.marked {
-  background-color: rgba(113,124,180,0.314);
+  background-color: rgba(128,203,196,0.251);
 }
 #article-container figure.highlight table {
   display: block;
@@ -1865,16 +1790,16 @@ blockquote footer cite:before {
 #article-container figure.highlight figcaption a {
   float: right;
   padding-right: 10px;
-  color: #a6accd;
+  color: #90a4ae;
 }
 #article-container figure.highlight figcaption a:hover {
-  border-bottom-color: #a6accd;
+  border-bottom-color: #90a4ae;
 }
 #article-container figure.highlight .gutter pre {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  background-color: #292d3e;
-  color: rgba(166,172,205,0.5);
+  background-color: #f6f8fa;
+  color: rgba(144,164,174,0.5);
   text-align: right;
 }
 #article-container figure.highlight .code pre {
@@ -1887,8 +1812,8 @@ blockquote footer cite:before {
   overflow: hidden;
   width: 100%;
   height: 1.5rem;
-  background: #252938;
-  color: #a6accd;
+  background: #e6ebf1;
+  color: #90a4ae;
   font-size: 14px;
 }
 #article-container figure.highlight .highlight-tools.closed + table {
