@@ -1814,7 +1814,7 @@ blockquote footer cite:before {
   overflow: hidden;
   border-radius: 7px;
   width: 100%;
-  height: 0rem;
+  height: 1.5rem;
   background: #e6ebf1;
   color: #90a4ae;
   font-size: 14px;
