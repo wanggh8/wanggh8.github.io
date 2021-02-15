@@ -1,0 +1,140 @@
+/*
+XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
+*/
+
+
+/* 新添加的內容 */
+/* ------------------------------------- */
+/* 代碼框背景色和字體顔色,與hljs一樣就行 */
+/* 必須配置(把下面.hljs的color和background複製到這裏來) */
+#article-container pre, 
+#article-container figure.highlight {
+  background: #292a2f;  
+  color: #DCDCDC
+}
+
+/* 代碼框工具欄 (如果你關掉了copy、lang和shrink,可不用配置這個 */
+#article-container figure.highlight .highlight-tools {
+    color: #747478;
+    background: #292A2F
+}
+
+/* 代碼框行數(如果已經關掉line_number,可以不用配置這個) */
+#article-container figure.highlight .gutter pre {
+    background-color: #292A2F;
+    color: #747478
+}
+
+/* 代碼塊figcaption配置(hexo自帶標簽https://hexo.io/zh-tw/docs/tag-plugins.html#Code-Block) */
+/* 不需要可以不用配置這個 */
+#article-container figure.highlight figcaption,
+#article-container figure.highlight figcaption a {
+  color: #747478 !important
+}
+
+/* 代碼框滾動條 (需要可配置，默認為主題主顔色）*/
+/* 不需要可以不用配置這個 */
+#article-container figure.highlight table::-webkit-scrollbar-thumb {
+    background: #292a2f !important
+}
+
+
+#article-container figure.highlight .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #292A2F;
+    color: #ffffffdb;
+  }
+
+  
+  /* Gray DOCTYPE selectors like WebKit */
+  .xml .hljs-meta {
+    color: #c0c0c0;
+  }
+  
+  .hljs-comment,
+  .hljs-quote {
+    color: #007400;
+  }
+  
+  .hljs-tag,
+  .hljs-attribute,
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal,
+  .hljs-name {
+    color: #aa0d91;
+  }
+  
+  .hljs-variable,
+  .hljs-template-variable {
+    color: #3F6E74;
+  }
+  
+  .hljs-code,
+  .hljs-string,
+  .hljs-meta-string {
+    color: #FC6A5D;
+  }
+  
+  .hljs-regexp,
+  .hljs-link {
+    color: #5482FF;
+  }
+  
+  .hljs-title,
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-number {
+    color: #D0BF69;
+  }
+  
+  .hljs-section,
+  .hljs-meta {
+    color: #643820;
+  }
+  
+  
+  .hljs-class .hljs-title,
+  .hljs-type,
+  .hljs-built_in,
+  .hljs-builtin-name,
+  .hljs-params {
+    color: #9EF1DD;
+  }
+  
+  .hljs-attr {
+    color: #836C28;
+  }
+  
+  .hljs-subst {
+    color: #000;
+  }
+  
+  .hljs-formula {
+    background-color: #eee;
+    font-style: italic;
+  }
+  
+  .hljs-addition {
+    background-color: #baeeba;
+  }
+  
+  .hljs-deletion {
+    background-color: #ffc8bd;
+  }
+  
+  .hljs-selector-id,
+  .hljs-selector-class {
+    color: #9b703f;
+  }
+  
+  .hljs-doctag,
+  .hljs-strong {
+    font-weight: bold;
+  }
+  
+  .hljs-emphasis {
+    font-style: italic;
+  }
