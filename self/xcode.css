@@ -89,6 +89,10 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   .hljs-number {
     color: #D6CA86;
   }
+
+  .hljs-params {
+    color: #BBF0E4;
+  }
   
   .hljs-section,
   .hljs-meta {
