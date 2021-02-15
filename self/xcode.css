@@ -55,7 +55,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   
   .hljs-comment,
   .hljs-quote {
-    color: #007400;
+    color: #818C97;
   }
   
   .hljs-tag,
@@ -65,6 +65,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   .hljs-literal,
   .hljs-name {
     color: #EE81B1;
+    font-weight: bold;
   }
   
   .hljs-variable,
@@ -101,7 +102,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   .hljs-built_in,
   .hljs-builtin-name,
   .hljs-params {
-    color: #9EF1DD;
+    color: #BBF0E4;
   }
   
   .hljs-attr {
