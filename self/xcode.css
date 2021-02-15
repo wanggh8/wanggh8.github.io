@@ -69,7 +69,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   
   .hljs-variable,
   .hljs-template-variable {
-    color: #3F6E74;
+    color: #89C0B3;
   }
   
   .hljs-code,
@@ -105,7 +105,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   }
   
   .hljs-attr {
-    color: #836C28;
+    color: #C4996F;
   }
   
   .hljs-subst {
@@ -127,7 +127,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   
   .hljs-selector-id,
   .hljs-selector-class {
-    color: #9b703f;
+    color: #F2A55F;
   }
   
   .hljs-doctag,
