@@ -1812,7 +1812,7 @@ blockquote footer cite:before {
 #article-container figure.highlight .highlight-tools {
   position: relative;
   overflow: hidden;
-  border-radius: 7px;
+  border-radius: 4px;
   width: 100%;
   height: 1.5rem;
   background: #e6ebf1;
