@@ -1725,7 +1725,7 @@ blockquote a {
 }
 blockquote p {
   margin: 0 !important;
-  padding: 0.5rem 0;
+  padding: 0 0;
 }
 blockquote footer {
   padding: 0 0 0.5rem;
@@ -1747,7 +1747,7 @@ blockquote footer cite:before {
   overflow-wrap: break-word;
 }
 #article-container pre {
-  padding: 0px 0px;
+  padding: 10px 20px;
 }
 #article-container pre code {
   padding: 0;
