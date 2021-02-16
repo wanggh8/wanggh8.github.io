@@ -1823,7 +1823,7 @@ blockquote footer cite:before {
 }
 #article-container figure.highlight .highlight-tools .expand {
   position: absolute;
-  padding: 0.4rem 0.7rem;
+  padding: 0.4rem 0.8rem;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
