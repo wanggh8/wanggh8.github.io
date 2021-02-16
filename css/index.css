@@ -1707,7 +1707,7 @@ canvas:not(#ribbon-canvas),
   overflow: auto;
   margin: 0 0 1rem;
   border-radius: 4px;
-  padding: 0 0.2rem 0.2rem;
+  padding: 0 0.2rem 0.1rem;
   background: #f6f8fa;
   color: #90a4ae;
   line-height: 1.6;
