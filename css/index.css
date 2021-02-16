@@ -1832,7 +1832,7 @@ blockquote footer cite:before {
   transition: transform 0.3s;
 }
 #article-container figure.highlight .highlight-tools .expand + .code-lang {
-  left: 1.7rem;
+  left: 1.8rem;
 }
 #article-container figure.highlight .highlight-tools .expand.closed {
   -webkit-transition: all 0.3s;
@@ -1848,7 +1848,7 @@ blockquote footer cite:before {
 }
 #article-container figure.highlight .highlight-tools .code-lang {
   position: absolute;
-  left: 0.7rem;
+  left: 0.8rem;
   text-transform: capitalize;
   font-weight: bold;
   font-size: 0.8rem;
@@ -1857,7 +1857,7 @@ blockquote footer cite:before {
 #article-container figure.highlight .highlight-tools .copy-notice {
   position: absolute;
   top: 0.25rem;
-  right: 1.7rem;
+  right: 1.8rem;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -1865,7 +1865,7 @@ blockquote footer cite:before {
 #article-container figure.highlight .highlight-tools .copy-button {
   position: absolute;
   top: 0.4rem;
-  right: 0.7rem;
+  right: 0.8rem;
   cursor: pointer;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
