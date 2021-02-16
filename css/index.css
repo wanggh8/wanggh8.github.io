@@ -1747,7 +1747,7 @@ blockquote footer cite:before {
   overflow-wrap: break-word;
 }
 #article-container pre {
-  padding: 10px 20px;
+  padding: 0px 0px;
 }
 #article-container pre code {
   padding: 0;
@@ -1760,7 +1760,7 @@ blockquote footer cite:before {
 }
 #article-container figure.highlight pre {
   margin: 0;
-  padding: 3 0;
+  padding: 8 0;
   border: none;
 }
 #article-container figure.highlight .line.marked {
