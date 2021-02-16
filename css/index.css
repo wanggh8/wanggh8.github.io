@@ -1705,7 +1705,7 @@ canvas:not(#ribbon-canvas),
 #article-container pre,
 #article-container figure.highlight {
   overflow: auto;
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
   border-radius: 4px;
   padding: 0;
   background: #f6f8fa;
@@ -1747,7 +1747,7 @@ blockquote footer cite:before {
   overflow-wrap: break-word;
 }
 #article-container pre {
-  padding: 10px 20px;
+  padding: 0 0;
 }
 #article-container pre code {
   padding: 0;
