@@ -42,7 +42,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
 #article-container figure.highlight .hljs {
     display: block;
     overflow-x: auto;
-    padding: 0.5em;
+    /* padding: 0.5em; */
     background: #292A2F;
     color: #ffffffdb;
   }
