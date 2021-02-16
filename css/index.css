@@ -1832,7 +1832,7 @@ blockquote footer cite:before {
   transition: transform 0.3s;
 }
 #article-container figure.highlight .highlight-tools .expand + .code-lang {
-  left: 1.8rem;
+  left: 2rem;
 }
 #article-container figure.highlight .highlight-tools .expand.closed {
   -webkit-transition: all 0.3s;
